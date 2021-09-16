@@ -16,7 +16,7 @@
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
   <title>
-          gfg
+          Spiral order in matrix.
         -
       Schatz
     </title>
@@ -37,46 +37,85 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #gfg
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/17/kth-element-of-two-sorted-arrays">K-th element of two sorted Arrays</a><time
-        datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/16/n-meetings-in-one-room">N meetings in one room</a><time
-        datetime="2021-09-16T00:00:00-05:00">Sep 16, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/15/sort-an-array-of-0s-1s-and-2s">Sort an array of 0s, 1s and 2s</a><time
-        datetime="2021-09-15T00:00:00-05:00">Sep 15, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/14/remove-loop-in-linkedlist">Remove loop in Linked List</a><time
-        datetime="2021-09-14T00:00:00-05:00">Sep 14, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021 - 1' reading</time>
+      <h1 class="title">
+          Spiral order in matrix.
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/leetcode">leetcode</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Given an m x n matrix, return all elements of the matrix in spiral order.</p>
+      <h3 id="edge-cases">
+          Edge Cases <a href="#edge-cases">#</a>
+      </h3>
+<ul>
+  <li>Even and Odd Number of Rows and Columns</li>
+</ul>
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[1,2,3],[4,5,6],[7,8,9],[7,8,9]]
+[[1,2,3,4],[5,6,7,8],[9,10,11,12],[9,10,11,12]]
+</code></pre></div></div>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<p>Code:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">spiralOrder</span><span class="o">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">matrix</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">res</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+        
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="na">length</span><span class="o">;</span>
+        
+        <span class="kt">int</span> <span class="n">x0</span> <span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">x1</span><span class="o">=</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">y1</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+        
+        
+        <span class="k">while</span><span class="o">(</span><span class="n">x0</span><span class="o">&lt;=</span><span class="n">x1</span> <span class="o">&amp;&amp;</span> <span class="n">y0</span><span class="o">&lt;=</span><span class="n">y1</span><span class="o">){</span>
+            
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">x0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">x1</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+                <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">matrix</span><span class="o">[</span><span class="n">y0</span><span class="o">][</span><span class="n">i</span><span class="o">]);</span>
+            <span class="o">}</span>
+            <span class="n">y0</span><span class="o">++;</span>
+            
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">y0</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">y1</span><span class="o">;</span><span class="n">j</span><span class="o">++){</span>
+                <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">matrix</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">x1</span><span class="o">]);</span>
+            <span class="o">}</span>
+            <span class="n">x1</span><span class="o">--;</span>
+            
+            <span class="k">if</span><span class="o">(</span><span class="n">y0</span><span class="o">&lt;=</span><span class="n">y1</span><span class="o">){</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">x1</span><span class="o">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">x0</span><span class="o">;</span><span class="n">i</span><span class="o">--){</span>
+                    <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">matrix</span><span class="o">[</span><span class="n">y1</span><span class="o">][</span><span class="n">i</span><span class="o">]);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="n">y1</span><span class="o">--;</span>
+
+            <span class="k">if</span><span class="o">(</span><span class="n">x0</span><span class="o">&lt;=</span><span class="n">x1</span><span class="o">){</span>
+                <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">y1</span><span class="o">;</span><span class="n">j</span><span class="o">&gt;=</span><span class="n">y0</span><span class="o">;</span><span class="n">j</span><span class="o">--){</span>
+                    <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">matrix</span><span class="o">[</span><span class="n">j</span><span class="o">][</span><span class="n">x0</span><span class="o">]);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="n">x0</span><span class="o">++;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (4), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (1), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (4)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/17/kth-element-of-two-sorted-arrays">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">K-th element of two sorted Arrays</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>
