@@ -1,33 +1,33 @@
-site: Gesko
-title: Gesko
+site: Schatz
+title: Schatz
 greetings: Hi 👋
 description: >-
-  just a minimalist, personal blog
+  Journey to One Piece
 lang: en-US
-timezone:  Europe/Rome
-repo: https://github.com/p0wex/Gesko # site repo [optional]
+timezone:  Asia/Kolkata
+repo: https://github.com/swarag-n/Schatz # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
 author:
-  name: p0wex
-  bio: just a minimalist, personal blog
-  userpicture: 
-  username: p0wex # general username
-  github: p0wex # github username
-  twitter: P0Wex # twitter username
-  email: your-email@email.com # email adress
+  name: Swarag Narayanasetty
+  bio: One Piece of my coding archives
+  # userpicture: 
+  username: Swarag-N # general username
+  github: Swarag-N # github username
+  twitter: NSwarag # twitter username
+  # email: your-email@email.com # email adress
 
 # Font Settings
 googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
-# URL settings
-url: "https://powex.ml" # Domain Name of host. [username].github.io for github pages
-baseurl: "/Gesko" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
-permalink: pretty
+# # URL settings
+# url: "https://swarag-n.github.io" # Domain Name of host. [username].github.io for github pages
+# baseurl: "/Schatz" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+# permalink: pretty
 
 # local
-# url: "http://localhost:4000" # 
-# baseurl: "" # 
+url: "http://localhost:4000" # 
+baseurl: "" # 
 
 
 markdown: kramdown
@@ -35,6 +35,15 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    # css_class: 'highlight'
+    # line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: true
+    # block:
+    #   line_numbers: true
+    #   start_line: 1
 
 exclude:
   - .jekyll-cache
