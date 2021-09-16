@@ -4,7 +4,7 @@ greetings: Hi 👋
 description: >-
   Journey to One Piece
 lang: en-US
-timezone:  Asia/Kolkata
+# timezone:  Asia/Kolkata
 repo: https://github.com/swarag-n/Schatz # site repo [optional]
 data-theme: dark # default theme "dark" | "light"
 
@@ -18,7 +18,7 @@ author:
   # email: your-email@email.com # email adress
 
 # Font Settings
-googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+googlewebfonts: family=Space+Mono:wght@400;700&family=Fira+Code:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
 
 # URL settings
 url: "https://swarag-n.github.io" # Domain Name of host. [username].github.io for github pages
@@ -55,8 +55,9 @@ exclude:
   - CONTRIBUTING.md
   
 compress_html:
-  clippings: all
   comments: ["<!-- ", " -->"]
+  blanklines: true
+  # clippings: all
 
 sass:
   sass_dir: _sass

@@ -3,16 +3,16 @@ layout: post
 title: N meetings in one room 
 description: Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
 summary: There is one meeting room in a firm. There are N meetings in the form of (start[i], end[i]) where start[i] is start time of meeting i and end[i] is finish time of meeting i.
-tags: coding gfg potd
+tags: gfg potd
 minute: 1
 ---
 
-# Question
+### Problem Statement
 There is one meeting room in a firm. There are N meetings in the form of (start[i], end[i]) where start[i] is start time of meeting i and end[i] is finish time of meeting i.
 What is the maximum number of meetings that can be accommodated in the meeting room when only one meeting can be held in the meeting room at a particular time?
 
 
-
+### Solution
 ```java
 class Solution 
 {

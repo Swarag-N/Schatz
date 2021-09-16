@@ -3,10 +3,26 @@ layout: post
 title: Remove loop in Linked List 
 description: This is a collection of short CSS snippets I thought might be useful for beginners
 summary: Remove the loop from the linked list, if it is present. 
-tags: coding gfg potd
+tags: gfg potd
 minute: 1
 ---
 
+### Problem Statement
+Given a linked list of N nodes such that it may contain a loop.
+A loop here means that the last node of the link list is connected to the node at position X. If the link list does not have any loop, X=0.
+Remove the loop from the linked list, if it is present.  
+
+### Edge Cases
+- Even Length Circular Linkedlist. 
+
+```text
+4
+1 2 3 4
+1
+```
+
+### Solution
+Code:
 
 ```java
 class Solution
@@ -18,6 +34,7 @@ class Solution
         if(head==null || head.next==null){
             return;
         }
+
         Node fast = head;
         Node slow = head;
         Node prev = head;
@@ -36,11 +53,8 @@ class Solution
             prev.next=null;
             return;
         }
-        
-        
+
         // even length Circular Linked List Edge Case
-        
-        
         fast = head;
         Node temp=null;
         while(fast!=slow){
@@ -52,12 +66,4 @@ class Solution
         return;
     }
 }
-```
-
-## Bonus
-check with an Edge Case (Even Length Circular Linkedlist) . 
-```
-4
-1 2 3 4
-1
 ```

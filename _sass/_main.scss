@@ -36,8 +36,8 @@ html {
 
 html,
 html[data-theme="light"] {
-	--text-font: Play;
-	--source-code-font: Source Code Pro;
+	--text-font: Space Mono;
+	--source-code-font: Fira Code;
 	--very-light-text-color: rgb(222, 222, 222);
 	--light-text-color: rgb(89, 183, 255);
 	--medium-text-color: #555;
@@ -100,8 +100,8 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-	--text-font: Play;
-	--source-code-font: Source Code Pro;
+	--text-font: Space Mono;
+	--source-code-font: Fira Code;
 	--very-light-text-color: #EEE;
 	--light-text-color: #c4bbf0;
 	--medium-text-color: #52057b;
@@ -266,7 +266,7 @@ h3,
 h4,
 h5 {
 	font-weight: bold;
-	margin-bottom: 1.5rem;
+	// margin-bottom: 1.5rem;
 	font-size: 2rem;
 }
 

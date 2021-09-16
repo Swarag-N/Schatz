@@ -3,13 +3,22 @@ layout: post
 title: Sort an array of 0s, 1s and 2s
 description: Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
 summary: Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
-tags: coding gfg potd
+tags: gfg potd
 minute: 1
 ---
 
+### Problem Statement
+Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
 
+
+## Trivia
+
+This is called as Dutch National Flag Algorithm
+
+### Solution
+
+Code:
 ```java
-
 class Solution
 {
     public static void sort012(int a[], int n)
@@ -42,9 +51,3 @@ class Solution
 }
 ```
 
-
-
-
-## Trivia
-
-This is called as Dutch National Flag Algorithim
