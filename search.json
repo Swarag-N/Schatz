@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Intersection of Two Arrays II",
+      "category" : "",
+      "tags"     : "leetcode, easy",
+      "url"      : "/Schatz/2021/09/18/arrays-intersection",
+      "date"     : "2021-09-18 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Sum of Query II",
+      "category" : "",
+      "tags"     : "gfg, medium, potd",
+      "url"      : "/Schatz/2021/09/18/sum-of-query-ii",
+      "date"     : "2021-09-18 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Spiral order in matrix.",
       "category" : "",
       "tags"     : "leetcode",
