@@ -53,6 +53,7 @@ exclude:
   - LICENSE.md
   - README.md
   - CONTRIBUTING.md
+  - templates/
   
 compress_html:
   comments: ["<!-- ", " -->"]
