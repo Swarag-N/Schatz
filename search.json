@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Median of 2 Sorted Arrays of Different Sizes",
+      "category" : "",
+      "tags"     : "gfg, potd, java, python, hard, appris, edge_case",
+      "url"      : "/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes",
+      "date"     : "2021-09-19 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Expression Add Operators",
+      "category" : "",
+      "tags"     : "leetcode, java, hard",
+      "url"      : "/Schatz/2021/09/19/expression-add-operators",
+      "date"     : "2021-09-19 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Intersection of Two Arrays II",
       "category" : "",
       "tags"     : "leetcode, easy",
@@ -19,7 +35,7 @@
     {
       "title"    : "Spiral order in matrix.",
       "category" : "",
-      "tags"     : "leetcode",
+      "tags"     : "leetcode, java",
       "url"      : "/Schatz/2021/09/17/spiral-order-in-matrix",
       "date"     : "2021-09-17 00:00:00 -0500"
     } ,
@@ -27,7 +43,7 @@
     {
       "title"    : "K-th element of two sorted Arrays",
       "category" : "",
-      "tags"     : "gfg, potd",
+      "tags"     : "gfg, potd, java",
       "url"      : "/Schatz/2021/09/17/kth-element-of-two-sorted-arrays",
       "date"     : "2021-09-17 00:00:00 -0500"
     } ,
@@ -35,7 +51,7 @@
     {
       "title"    : "N meetings in one room",
       "category" : "",
-      "tags"     : "gfg, potd",
+      "tags"     : "gfg, potd, java",
       "url"      : "/Schatz/2021/09/16/n-meetings-in-one-room",
       "date"     : "2021-09-16 00:00:00 -0500"
     } ,
@@ -43,7 +59,7 @@
     {
       "title"    : "Sort an array of 0s, 1s and 2s",
       "category" : "",
-      "tags"     : "gfg, potd",
+      "tags"     : "gfg, potd, java",
       "url"      : "/Schatz/2021/09/15/sort-an-array-of-0s-1s-and-2s",
       "date"     : "2021-09-15 00:00:00 -0500"
     } ,
@@ -51,7 +67,7 @@
     {
       "title"    : "Remove loop in Linked List",
       "category" : "",
-      "tags"     : "gfg, potd",
+      "tags"     : "gfg, potd, java, edge_case",
       "url"      : "/Schatz/2021/09/14/remove-loop-in-linkedlist",
       "date"     : "2021-09-14 00:00:00 -0500"
     } 

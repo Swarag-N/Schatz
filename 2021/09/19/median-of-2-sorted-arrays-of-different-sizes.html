@@ -15,10 +15,11 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="">
+      <meta name="description" content="Given two sorted arrays array1 and array2 of size m and n respectively. Find the median of the two sorted arrays.">
   <title>
+          Median of 2 Sorted Arrays of Different Sizes
+        -
       Schatz
-        - Journey to One Piece
     </title>
     <link rel="alternate" type="application/atom+xml" title="Schatz" href="https://swarag-n.github.io/Schatz/atom.xml">
     <link rel="alternate" type="application/json" title="Schatz" href="https://swarag-n.github.io/Schatz/feed.json" />
@@ -37,76 +38,137 @@
  </script>
 <body>
   <main>
-    <section id="intro">
-    <div class="flex-row-between">
-      <h1>
-          Hi 👋
+    <section class="post">
+  <div class="flex-row-between">
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021 - 1' reading</time>
+      <h1 class="title">
+          Median of 2 Sorted Arrays of Different Sizes
       </h1>
-        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-            <div></div>
-        </button>
-    </div>
-    <div class="bio">
-	    Journey to One Piece
-        <p>
-	    <a href="https://swarag-n.github.io/Schatz/about/">> About me</a>
-        </p>
-    </div>
-</section>
-<div class="search-article">
-    <label for="search-input" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </label>
-    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
-    <ul id="search-results"></ul>
-</div>
-<section class="posts" id="Blog">
-      <h2>
-          BLOG
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/hard">hard</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/appris">appris</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/edge_case">edge_case</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Given two sorted arrays array1 and array2 of size m and n respectively. Find the median of the two sorted arrays.</p>
+      <h2 id="appris">
+          Appris <a href="#appris">#</a>
       </h2>
-    <ul>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/expression-add-operators">Expression Add Operators</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/arrays-intersection">Intersection of Two Arrays II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/sum-of-query-ii">Sum of Query II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/17/spiral-order-in-matrix">Spiral order in matrix.</a>
-            <time datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/17/kth-element-of-two-sorted-arrays">K-th element of two sorted Arrays</a>
-            <time datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/16/n-meetings-in-one-room">N meetings in one room</a>
-            <time datetime="2021-09-16T00:00:00-05:00">Sep 16, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/15/sort-an-array-of-0s-1s-and-2s">Sort an array of 0s, 1s and 2s</a>
-            <time datetime="2021-09-15T00:00:00-05:00">Sep 15, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/14/remove-loop-in-linkedlist">Remove loop in Linked List</a>
-            <time datetime="2021-09-14T00:00:00-05:00">Sep 14, 2021</time>
-        </li>
-    </ul>
+<ul>
+  <li>In Python, it is important have integer decimal, as integer itself
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5.0 -&gt; 5
+5.1 -&gt; 5.1 
+</code></pre></div>    </div>
+  </li>
+  <li>In Java, Divide by double to convert the return into double, rather than type conversion.</li>
+</ul>
+      <h2 id="note-to-self">
+          Note to self <a href="#note-to-self">#</a>
+      </h2>
+<ul>
+  <li>The naive approach would be to merge the two arrays and return the median element(s).</li>
+  <li>But for the naive method, there is a lot of overhead. We only need the midst element(s). So we could do what we do in merge sort, iterate over the two arrays and have a counter to reach the middle element(s).</li>
+  <li>This can be achieved in serval ways, one of which is to create an auxiliary array of size (m + n) /2 +1. (We only need the middle element(s)). Therefore this space is more than enough.</li>
+  <li>But I believe this can be further optimized, by only storing one extra element, in the case of an even number of elements.May reduce the space complexity but not the complexity, cause a check to be done several times</li>
+</ul>
+      <h2 id="edge-case">
+          Edge Case <a href="#edge-case">#</a>
+      </h2>
+<ul>
+  <li>Look for <code>Odd</code> and <code>Even</code> number of elements. Check explicitly for even number of total elements</li>
+</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4
+1 2 3 4
+6
+5 6 7 8 9 10
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+4
+1
+2
+</code></pre></div></div>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+      <h3 id="java">
+          Java <a href="#java">#</a>
+      </h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">class</span> <span class="nc">GFG</span> 
+<span class="o">{</span> 
+    <span class="kd">static</span> <span class="kt">double</span> <span class="nf">medianOfArrays</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">,</span> <span class="kt">int</span> <span class="n">m</span><span class="o">,</span> <span class="kt">int</span> <span class="n">a</span><span class="o">[],</span> <span class="kt">int</span> <span class="n">b</span><span class="o">[])</span> 
+    <span class="o">{</span>
+        <span class="c1">// Your Code Here</span>
+        <span class="kt">int</span> <span class="n">mid</span> <span class="o">=</span> <span class="o">((</span><span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="o">)/</span><span class="mi">2</span><span class="o">)+</span><span class="mi">1</span><span class="o">;</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">mid</span><span class="o">];</span>
+        
+        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="o">,</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+        
+        <span class="k">while</span><span class="o">(</span><span class="n">k</span><span class="o">&lt;</span><span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">m</span> <span class="o">){</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]&lt;=</span><span class="n">b</span><span class="o">[</span><span class="n">j</span><span class="o">]){</span>
+                <span class="n">arr</span><span class="o">[</span><span class="n">k</span><span class="o">++]=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">++];</span>
+            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                <span class="n">arr</span><span class="o">[</span><span class="n">k</span><span class="o">++]=</span><span class="n">b</span><span class="o">[</span><span class="n">j</span><span class="o">++];</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        
+        <span class="k">while</span><span class="o">(</span><span class="n">k</span><span class="o">&lt;</span><span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">){</span>
+            <span class="n">arr</span><span class="o">[</span><span class="n">k</span><span class="o">++]=</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">++];</span>
+        <span class="o">}</span>
+        
+        <span class="k">while</span><span class="o">(</span><span class="n">k</span><span class="o">&lt;</span><span class="n">mid</span> <span class="o">&amp;&amp;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">m</span><span class="o">){</span>
+            <span class="n">arr</span><span class="o">[</span><span class="n">k</span><span class="o">++]=</span><span class="n">b</span><span class="o">[</span><span class="n">j</span><span class="o">++];</span>
+        <span class="o">}</span>
+        
+        <span class="k">if</span><span class="o">((</span><span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="o">)%</span><span class="mi">2</span><span class="o">==</span><span class="mi">1</span><span class="o">){</span>
+            <span class="k">return</span> <span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
+        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+            <span class="k">return</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="n">arr</span><span class="o">[</span><span class="n">mid</span><span class="o">-</span><span class="mi">2</span><span class="o">])/</span><span class="mf">2.0</span><span class="o">;</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+      <h4 id="python">
+          Python <a href="#python">#</a>
+      </h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">MedianOfArrays</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array1</span><span class="p">,</span> <span class="n">array2</span><span class="p">):</span>
+        <span class="c1">#code here
+</span>        <span class="s">"""
+        Naive approach
+        """</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">array1</span><span class="o">+</span><span class="n">array2</span>
+        <span class="n">a</span><span class="p">.</span><span class="n">sort</span><span class="p">();</span>
+        
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="mi">2</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span><span class="o">!=</span><span class="n">val</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">val</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">);</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">];</span>
+</code></pre></div></div>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/19/expression-add-operators">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Expression Add Operators</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>
@@ -146,16 +208,4 @@
         class="fa fa-code" aria-hidden="true"></i></a>
   </div>
 </footer>
-  <script src="https://swarag-n.github.io/Schatz/assets/js/simple-jekyll-search.js"></script>
-  <script>
-    var sjs = SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('search-results'),
-		      json: 'https://swarag-n.github.io/Schatz/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-      noResultsText: 'No results found..',
-      limit: 10,
-      fuzzy: true,
-    })
-  </script>
 </html>
