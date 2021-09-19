@@ -3,7 +3,9 @@ layout: post
 title: Spiral order in matrix.
 description: Given an m x n matrix, return all elements of the matrix in spiral order.
 summary: Given an m x n matrix, return all elements of the matrix in spiral order.
-tags: leetcode
+tags:
+    - leetcode
+    - java
 minute: 1
 ---
 

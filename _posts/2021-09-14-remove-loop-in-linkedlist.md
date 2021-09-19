@@ -3,7 +3,11 @@ layout: post
 title: Remove loop in Linked List 
 description: This is a collection of short CSS snippets I thought might be useful for beginners
 summary: Remove the loop from the linked list, if it is present. 
-tags: gfg potd
+tags:
+    - gfg
+    - potd
+    - java
+    - edge_case
 minute: 1
 ---
 

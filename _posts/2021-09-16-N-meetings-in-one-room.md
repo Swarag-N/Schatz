@@ -3,7 +3,10 @@ layout: post
 title: N meetings in one room 
 description: Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.
 summary: There is one meeting room in a firm. There are N meetings in the form of (start[i], end[i]) where start[i] is start time of meeting i and end[i] is finish time of meeting i.
-tags: gfg potd
+tags:
+    - gfg
+    - potd
+    - java
 minute: 1
 ---
 
