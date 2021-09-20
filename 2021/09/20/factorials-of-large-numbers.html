@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="100 Days of Code Challenge">
+      <meta name="description" content="Given an integer N, find its factorial.">
   <title>
-          100daysOfCode
+          Factorials of large numbers
         -
       Schatz
     </title>
@@ -38,80 +38,117 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #100daysOfCode
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-  </ul>
-</section>
-<section class="tags">
-      <h2>
-          All tags:
+  <time datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021 - 1' reading</time>
+      <h1 class="title">
+          Factorials of large numbers
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/appris">appris</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/edge_case">edge_case</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Given an integer N, find its factorial.</p>
+      <h2 id="appris">
+          Appris <a href="#appris">#</a>
       </h2>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (1), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (7), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (8), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (7), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (2)
-      </a>
-    </li>
-  </ul>
+<ul>
+  <li>Python is better for these types of problems, datatype overflow will not be an issue.</li>
+  <li>Integers in Python 3 are limited only by available memory. Python 2 had two integer types - int and long. They are unified from Python 3.</li>
+  <li>BigInteger is an 0ption in Java</li>
+</ul>
+      <h2 id="edge-case">
+          Edge Case <a href="#edge-case">#</a>
+      </h2>
+<ul>
+  <li>Factorial problems, look for corner cases of the input range. Look for overflow and run-time errors.</li>
+</ul>
+<ol>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>50
+</code></pre></div>    </div>
+  </li>
+</ol>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+      <h4 id="java">
+          Java <a href="#java">#</a>
+      </h4>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">arrayMultiplication</span><span class="o">(</span><span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">res</span><span class="o">,</span> <span class="kt">int</span> <span class="n">factor</span><span class="o">){</span>
+        <span class="kt">int</span> <span class="n">carry</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">res</span><span class="o">.</span><span class="na">size</span><span class="o">()-</span><span class="mi">1</span><span class="o">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">--){</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">)*</span><span class="n">factor</span> <span class="o">+</span> <span class="n">carry</span><span class="o">;</span>
+            <span class="n">res</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="n">temp</span><span class="o">%</span><span class="mi">10</span><span class="o">);</span>
+            <span class="n">carry</span> <span class="o">=</span> <span class="n">temp</span><span class="o">/</span><span class="mi">10</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">while</span><span class="o">(</span><span class="n">carry</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">){</span>
+            <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="n">carry</span><span class="o">%</span><span class="mi">10</span><span class="o">);</span>
+            <span class="n">carry</span> <span class="o">=</span> <span class="n">carry</span><span class="o">/</span><span class="mi">10</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="kd">static</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">factorial</span><span class="o">(</span><span class="kt">int</span> <span class="no">N</span><span class="o">){</span>
+        <span class="c1">//code here</span>
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">res</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;();</span>
+        <span class="k">if</span><span class="o">(</span><span class="no">N</span><span class="o">==</span><span class="mi">1</span> <span class="o">||</span> <span class="no">N</span><span class="o">==</span><span class="mi">2</span><span class="o">){</span>
+            <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="no">N</span><span class="o">);</span>
+            <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+        <span class="o">}</span>
+        
+        <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="no">N</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+            <span class="n">arrayMultiplication</span><span class="o">(</span><span class="n">res</span><span class="o">,</span><span class="n">i</span><span class="o">);</span>
+        <span class="o">}</span>
+        
+        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+      <h4 id="python">
+          Python <a href="#python">#</a>
+      </h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+        <span class="c1">#code here
+</span>        <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">temp</span><span class="o">*=</span><span class="n">i</span><span class="p">;</span>
+        
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
+            <span class="n">res</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+</code></pre></div></div>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Median of 2 Sorted Arrays of Different Sizes</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

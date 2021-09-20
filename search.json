@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Factorials of large numbers",
+      "category" : "",
+      "tags"     : "gfg, potd, java, python, medium, appris, edge_case",
+      "url"      : "/Schatz/2021/09/20/factorials-of-large-numbers",
+      "date"     : "2021-09-20 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Median of 2 Sorted Arrays of Different Sizes",
       "category" : "",
       "tags"     : "gfg, potd, java, python, hard, appris, edge_case",
