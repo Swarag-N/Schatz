@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="easy problems either in leetcode, geeksforgeeks or others.">
+      <meta name="description" content="Geek wants to make a special space for candies on his bookshelf. Currently, it has N books, each of whose height is represented by the array height[] and has unit width. Help him select 2 books such that he can store maximum candies between them by removing all the other books from between the selected books. The task is to find out the area between two books that can hold the maximum candies without changing the original position of selected books">
   <title>
-          easy
+          Dam of Candies
         -
       Schatz
     </title>
@@ -38,82 +38,54 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #easy
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/18/arrays-intersection">Intersection of Two Arrays II</a><time
-        datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-21T00:00:00-05:00">Sep 21, 2021 - 1' reading</time>
+      <h1 class="title">
+          Dam of Candies
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Geek wants to make a special space for candies on his bookshelf. Currently, it has N books, each of whose height is represented by the array height[] and has unit width.
+Help him select 2 books such that he can store maximum candies between them by removing all the other books from between the selected books. The task is to find out the area between two books that can hold the maximum candies without changing the original position of selected books</p>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
+<span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">maxCandy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span> 
+        <span class="c1"># Your code goes here
+</span>        <span class="n">maximum</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="n">f</span><span class="o">=</span><span class="mi">0</span>
+        <span class="n">l</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">f</span><span class="o">&lt;</span><span class="n">l</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">height</span><span class="p">[</span><span class="n">f</span><span class="p">]</span><span class="o">&lt;</span><span class="n">height</span><span class="p">[</span><span class="n">l</span><span class="p">]:</span>
+                <span class="n">maximum</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">maximum</span><span class="p">,(</span><span class="n">l</span><span class="o">-</span><span class="n">f</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">height</span><span class="p">[</span><span class="n">f</span><span class="p">])</span>
+                <span class="n">f</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">maximum</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">maximum</span><span class="p">,(</span><span class="n">l</span><span class="o">-</span><span class="n">f</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">height</span><span class="p">[</span><span class="n">l</span><span class="p">])</span>
+                <span class="n">l</span><span class="o">-=</span><span class="mi">1</span>
+        <span class="k">return</span> <span class="n">maximum</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (1), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (8), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (8), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (8), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (3)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/20/factorials-of-large-numbers">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Factorials of large numbers</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

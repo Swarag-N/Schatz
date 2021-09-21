@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Dam of Candies",
+      "category" : "",
+      "tags"     : "gfg, potd, python, medium",
+      "url"      : "/Schatz/2021/09/21/dam-of-candies",
+      "date"     : "2021-09-21 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Factorials of large numbers",
       "category" : "",
       "tags"     : "gfg, potd, java, python, medium, appris, edge_case",
