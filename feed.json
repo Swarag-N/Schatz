@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match",
+            "title": "Repeated String Match",
+            "summary": "Given two strings A and B, find the minimum number of times A has to be repeated such that B becomes a substring of the repeated A. If B cannot be a substring of A no matter how many times it is repeated, return -1.",
+            "content_text": "Problem StatementGiven two strings A and B, find the minimum number of times A has to be repeated such that B becomes a substring of the repeated A. If B cannot be a substring of A no matter how many times it is repeated, return -1.Appris  String questions, Python is goto.Solutionclass Solution:    def repeatedStringMatch(self, A, B):        # code here        cnt = 1        S = A;        while(len(B) &gt; len(S)):            S+=A            cnt+=1        if B in S:            return cnt        if B in S+A:            return cnt+1        return -1;",
+            "content_html": "<h3 id=\"problem-statement\">Problem Statement</h3><p>Given two strings A and B, find the minimum number of times A has to be repeated such that B becomes a substring of the repeated A. If B cannot be a substring of A no matter how many times it is repeated, return -1.</p><h2 id=\"appris\">Appris</h2><ul>  <li>String questions, Python is goto.</li></ul><h3 id=\"solution\">Solution</h3><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">class</span> <span class=\"nc\">Solution</span><span class=\"p\">:</span>    <span class=\"k\">def</span> <span class=\"nf\">repeatedStringMatch</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">A</span><span class=\"p\">,</span> <span class=\"n\">B</span><span class=\"p\">):</span>        <span class=\"c1\"># code here</span>        <span class=\"n\">cnt</span> <span class=\"o\">=</span> <span class=\"mi\">1</span>        <span class=\"n\">S</span> <span class=\"o\">=</span> <span class=\"n\">A</span><span class=\"p\">;</span>        <span class=\"k\">while</span><span class=\"p\">(</span><span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">B</span><span class=\"p\">)</span> <span class=\"o\">&gt;</span> <span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">S</span><span class=\"p\">)):</span>            <span class=\"n\">S</span><span class=\"o\">+=</span><span class=\"n\">A</span>            <span class=\"n\">cnt</span><span class=\"o\">+=</span><span class=\"mi\">1</span>        <span class=\"k\">if</span> <span class=\"n\">B</span> <span class=\"ow\">in</span> <span class=\"n\">S</span><span class=\"p\">:</span>            <span class=\"k\">return</span> <span class=\"n\">cnt</span>        <span class=\"k\">if</span> <span class=\"n\">B</span> <span class=\"ow\">in</span> <span class=\"n\">S</span><span class=\"o\">+</span><span class=\"n\">A</span><span class=\"p\">:</span>            <span class=\"k\">return</span> <span class=\"n\">cnt</span><span class=\"o\">+</span><span class=\"mi\">1</span>        <span class=\"k\">return</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">;</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match",
+            
+            
+            
+            "tags": ["gfg","potd","python","medium","appris"],
+            
+            "date_published": "2021-09-22T00:00:00-05:00",
+            "date_modified": "2021-09-22T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/09/21/dam-of-candies",
             "title": "Dam of Candies",
             "summary": "Geek wants to make a special space for candies on his bookshelf. Currently, it has N books, each of whose height is represented by the array height[] and has unit width. Help him select 2 books such that he can store maximum candies between them by removing all the other books from between the selected books. The task is to find out the area between two books that can hold the maximum candies without changing the original position of selected books",
