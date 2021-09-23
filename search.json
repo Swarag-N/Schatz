@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Count total set bits",
+      "category" : "",
+      "tags"     : "gfg, potd, java, medium",
+      "url"      : "/Schatz/2021/09/23/count-total-set-bits",
+      "date"     : "2021-09-23 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Repeated String Match",
       "category" : "",
       "tags"     : "gfg, potd, python, medium, appris",

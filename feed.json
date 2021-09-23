@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/09/23/count-total-set-bits",
+            "title": "Count total set bits",
+            "summary": "You are given a number N. Find the total count of set bits for all numbers from 1 to N(both inclusive).",
+            "content_text": "Problem StatementYou are given a number N. Find the total count of set bits for all numbers from 1 to N(both inclusive).Solutionclass Solution{        public static int log2(int N){          // calculate log2 N indirectly        // using log() method        int result = (int)Math.floor(Math.log(N) / Math.log(2));        return result;    }        //Function to return sum of count of set bits in the integers from 1 to n.    public static int countSetBits(int n){        // Your code here        if((n&amp;(n-1)) == 0){            //if n is power of 2 directly return result            return 1+ log2(n)*(n/2);       }else{           // y is 2th power  before n           int y =(int) Math.pow(2,log2(n));           return (n-y) + countSetBits(y)+ countSetBits(n-y);       }    }}",
+            "content_html": "<h3 id=\"problem-statement\">Problem Statement</h3><p>You are given a number N. Find the total count of set bits for all numbers from 1 to N(both inclusive).</p><h3 id=\"solution\">Solution</h3><div class=\"language-java highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"kd\">class</span> <span class=\"nc\">Solution</span><span class=\"o\">{</span>        <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">int</span> <span class=\"nf\">log2</span><span class=\"o\">(</span><span class=\"kt\">int</span> <span class=\"no\">N</span><span class=\"o\">){</span>          <span class=\"c1\">// calculate log2 N indirectly</span>        <span class=\"c1\">// using log() method</span>        <span class=\"kt\">int</span> <span class=\"n\">result</span> <span class=\"o\">=</span> <span class=\"o\">(</span><span class=\"kt\">int</span><span class=\"o\">)</span><span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">floor</span><span class=\"o\">(</span><span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">log</span><span class=\"o\">(</span><span class=\"no\">N</span><span class=\"o\">)</span> <span class=\"o\">/</span> <span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">log</span><span class=\"o\">(</span><span class=\"mi\">2</span><span class=\"o\">));</span>        <span class=\"k\">return</span> <span class=\"n\">result</span><span class=\"o\">;</span>    <span class=\"o\">}</span>        <span class=\"c1\">//Function to return sum of count of set bits in the integers from 1 to n.</span>    <span class=\"kd\">public</span> <span class=\"kd\">static</span> <span class=\"kt\">int</span> <span class=\"nf\">countSetBits</span><span class=\"o\">(</span><span class=\"kt\">int</span> <span class=\"n\">n</span><span class=\"o\">){</span>        <span class=\"c1\">// Your code here</span>        <span class=\"k\">if</span><span class=\"o\">((</span><span class=\"n\">n</span><span class=\"o\">&amp;(</span><span class=\"n\">n</span><span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"o\">))</span> <span class=\"o\">==</span> <span class=\"mi\">0</span><span class=\"o\">){</span>            <span class=\"c1\">//if n is power of 2 directly return result</span>            <span class=\"k\">return</span> <span class=\"mi\">1</span><span class=\"o\">+</span> <span class=\"n\">log2</span><span class=\"o\">(</span><span class=\"n\">n</span><span class=\"o\">)*(</span><span class=\"n\">n</span><span class=\"o\">/</span><span class=\"mi\">2</span><span class=\"o\">);</span>       <span class=\"o\">}</span><span class=\"k\">else</span><span class=\"o\">{</span>           <span class=\"c1\">// y is 2th power  before n</span>           <span class=\"kt\">int</span> <span class=\"n\">y</span> <span class=\"o\">=(</span><span class=\"kt\">int</span><span class=\"o\">)</span> <span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">pow</span><span class=\"o\">(</span><span class=\"mi\">2</span><span class=\"o\">,</span><span class=\"n\">log2</span><span class=\"o\">(</span><span class=\"n\">n</span><span class=\"o\">));</span>           <span class=\"k\">return</span> <span class=\"o\">(</span><span class=\"n\">n</span><span class=\"o\">-</span><span class=\"n\">y</span><span class=\"o\">)</span> <span class=\"o\">+</span> <span class=\"n\">countSetBits</span><span class=\"o\">(</span><span class=\"n\">y</span><span class=\"o\">)+</span> <span class=\"n\">countSetBits</span><span class=\"o\">(</span><span class=\"n\">n</span><span class=\"o\">-</span><span class=\"n\">y</span><span class=\"o\">);</span>       <span class=\"o\">}</span>    <span class=\"o\">}</span><span class=\"o\">}</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/09/23/count-total-set-bits",
+            
+            
+            
+            "tags": ["gfg","potd","java","medium"],
+            
+            "date_published": "2021-09-23T00:00:00-05:00",
+            "date_modified": "2021-09-23T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match",
             "title": "Repeated String Match",
             "summary": "Given two strings A and B, find the minimum number of times A has to be repeated such that B becomes a substring of the repeated A. If B cannot be a substring of A no matter how many times it is repeated, return -1.",
