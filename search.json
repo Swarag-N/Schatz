@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Check Tree Traversal",
+      "category" : "",
+      "tags"     : "gf, potd, java, hard",
+      "url"      : "/Schatz/2021/09/24/check-tree-traversal",
+      "date"     : "2021-09-24 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Count total set bits",
       "category" : "",
       "tags"     : "gfg, potd, java, medium",
