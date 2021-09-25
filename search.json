@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Largest subarray with 0 sum",
+      "category" : "",
+      "tags"     : "gfg, potd, java, easy, appris",
+      "url"      : "/Schatz/2021/09/25/largest-subarray-with-0-sum",
+      "date"     : "2021-09-25 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Check Tree Traversal",
       "category" : "",
       "tags"     : "gf, potd, java, hard",

@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum",
+            "title": "Largest subarray with 0 sum",
+            "summary": "Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.",
+            "content_text": "Problem StatementGiven an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.Appris  Check whether the prefix sum has appeared earlier, cause  this shows the sum of values between current element and previous is equivalent to zeroSolutionclass GfG{    int maxLen(int arr[], int n){        // Your code here        Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();        int sum = 0;        map.put(sum,0);        sum+=arr[0];                int res = 0;        map.put(sum,1);                for(int i=1;i&lt;n;i++){            sum+=arr[i];            Integer val = map.get(sum);            if(val!=null){                res = Math.max(res,i-val+1);            }else{                map.put(sum,i+1);            }        }                return res;    }}",
+            "content_html": "<h3 id=\"problem-statement\">Problem Statement</h3><p>Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.</p><h2 id=\"appris\">Appris</h2><ul>  <li>Check whether the prefix sum has appeared earlier, cause  this shows the sum of values between current element and previous is equivalent to zero</li></ul><h3 id=\"solution\">Solution</h3><div class=\"language-java highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"kd\">class</span> <span class=\"nc\">GfG</span><span class=\"o\">{</span>    <span class=\"kt\">int</span> <span class=\"nf\">maxLen</span><span class=\"o\">(</span><span class=\"kt\">int</span> <span class=\"n\">arr</span><span class=\"o\">[],</span> <span class=\"kt\">int</span> <span class=\"n\">n</span><span class=\"o\">){</span>        <span class=\"c1\">// Your code here</span>        <span class=\"nc\">Map</span><span class=\"o\">&lt;</span><span class=\"nc\">Integer</span><span class=\"o\">,</span> <span class=\"nc\">Integer</span><span class=\"o\">&gt;</span> <span class=\"n\">map</span> <span class=\"o\">=</span> <span class=\"k\">new</span> <span class=\"nc\">HashMap</span><span class=\"o\">&lt;&gt;();</span>        <span class=\"kt\">int</span> <span class=\"n\">sum</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">;</span>        <span class=\"n\">map</span><span class=\"o\">.</span><span class=\"na\">put</span><span class=\"o\">(</span><span class=\"n\">sum</span><span class=\"o\">,</span><span class=\"mi\">0</span><span class=\"o\">);</span>        <span class=\"n\">sum</span><span class=\"o\">+=</span><span class=\"n\">arr</span><span class=\"o\">[</span><span class=\"mi\">0</span><span class=\"o\">];</span>                <span class=\"kt\">int</span> <span class=\"n\">res</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">;</span>        <span class=\"n\">map</span><span class=\"o\">.</span><span class=\"na\">put</span><span class=\"o\">(</span><span class=\"n\">sum</span><span class=\"o\">,</span><span class=\"mi\">1</span><span class=\"o\">);</span>                <span class=\"k\">for</span><span class=\"o\">(</span><span class=\"kt\">int</span> <span class=\"n\">i</span><span class=\"o\">=</span><span class=\"mi\">1</span><span class=\"o\">;</span><span class=\"n\">i</span><span class=\"o\">&lt;</span><span class=\"n\">n</span><span class=\"o\">;</span><span class=\"n\">i</span><span class=\"o\">++){</span>            <span class=\"n\">sum</span><span class=\"o\">+=</span><span class=\"n\">arr</span><span class=\"o\">[</span><span class=\"n\">i</span><span class=\"o\">];</span>            <span class=\"nc\">Integer</span> <span class=\"n\">val</span> <span class=\"o\">=</span> <span class=\"n\">map</span><span class=\"o\">.</span><span class=\"na\">get</span><span class=\"o\">(</span><span class=\"n\">sum</span><span class=\"o\">);</span>            <span class=\"k\">if</span><span class=\"o\">(</span><span class=\"n\">val</span><span class=\"o\">!=</span><span class=\"kc\">null</span><span class=\"o\">){</span>                <span class=\"n\">res</span> <span class=\"o\">=</span> <span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">max</span><span class=\"o\">(</span><span class=\"n\">res</span><span class=\"o\">,</span><span class=\"n\">i</span><span class=\"o\">-</span><span class=\"n\">val</span><span class=\"o\">+</span><span class=\"mi\">1</span><span class=\"o\">);</span>            <span class=\"o\">}</span><span class=\"k\">else</span><span class=\"o\">{</span>                <span class=\"n\">map</span><span class=\"o\">.</span><span class=\"na\">put</span><span class=\"o\">(</span><span class=\"n\">sum</span><span class=\"o\">,</span><span class=\"n\">i</span><span class=\"o\">+</span><span class=\"mi\">1</span><span class=\"o\">);</span>            <span class=\"o\">}</span>        <span class=\"o\">}</span>                <span class=\"k\">return</span> <span class=\"n\">res</span><span class=\"o\">;</span>    <span class=\"o\">}</span><span class=\"o\">}</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum",
+            
+            
+            
+            "tags": ["gfg","potd","java","easy","appris"],
+            
+            "date_published": "2021-09-25T00:00:00-05:00",
+            "date_modified": "2021-09-25T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/09/24/check-tree-traversal",
             "title": "Check Tree Traversal",
             "summary": null,
