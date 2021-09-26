@@ -11,6 +11,7 @@ tags:
     - hard
     - appris
     - edge_case
+    - note
 minute: 1
 ---
 
@@ -25,7 +26,7 @@ Given two sorted arrays array1 and array2 of size m and n respectively. Find the
 ``` 
 -  In Java, Divide by double to convert the return into double, rather than type conversion.
 
-## Note to self
+## Note
 - The naive approach would be to merge the two arrays and return the median element(s). 
 - But for the naive method, there is a lot of overhead. We only need the midst element(s). So we could do what we do in merge sort, iterate over the two arrays and have a counter to reach the middle element(s).
 - This can be achieved in serval ways, one of which is to create an auxiliary array of size (m + n) /2 +1. (We only need the middle element(s)). Therefore this space is more than enough. 

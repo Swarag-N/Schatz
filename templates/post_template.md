@@ -15,6 +15,7 @@ tags:
     - dp
     - appris
     - edge_case
+    - note
 minute: 1
 ---
 

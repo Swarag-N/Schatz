@@ -7,7 +7,7 @@ tags:
     - leetcode
     - java
     - hard
-
+    - note
 minute: 1
 ---
 

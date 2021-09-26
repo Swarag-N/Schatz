@@ -1,17 +1,19 @@
 ---
 layout: post
-title: 
-description: 
-summary: 
+title: Check Tree Traversal
+description: Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.
+summary: Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.
 tags:
     - gf
     - potd
     - java
     - hard
+    - note
 minute: 1
 ---
 
 ### Problem Statement
+Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.
 
 ### Note
 This Soln is By <code>Ayush Modi</code>
