@@ -15,11 +15,11 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="You are given an array arr[] of n integers and q queries in an array queries[] of length 2*q containing l, r pair for all q queries. You need to compute the following sum over q queries.">
+      <meta name="description" content="">
   <title>
-          Sum of Query II
-        -
+        Page 4 of 4 -
       Schatz
+        - Journey to One Piece
     </title>
     <link rel="alternate" type="application/atom+xml" title="Schatz" href="https://swarag-n.github.io/Schatz/atom.xml">
     <link rel="alternate" type="application/json" title="Schatz" href="https://swarag-n.github.io/Schatz/feed.json" />
@@ -38,86 +38,55 @@
  </script>
 <body>
   <main>
-    <section class="post">
-  <div class="flex-row-between">
-	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
-    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-      <div></div>
-    </button>
-  </div>
-  <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021 - 1' reading</time>
-      <h1 class="title">
-          Sum of Query II
+    <section id="intro">
+    <div class="flex-row-between">
+      <h1>
+          Hi 👋
       </h1>
-  <span class="meta">
-    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
-    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
-    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a></span>
-      <h3 id="problem-statement">
-          Problem Statement <a href="#problem-statement">#</a>
-      </h3>
-<p>You are given an array arr[] of n integers and q queries in an array queries[] of length 2*q containing l, r pair for all q queries. You need to compute the following sum over q queries.</p>
-      <h2 id="example">
-          Example <a href="#example">#</a>
-      </h2>
-<ul>
-  <li>Need to find the sum of numbers between two points
-    <ul>
-      <li>why not find complete sum and remove
-        <ul>
-          <li>the staring and</li>
-          <li>the ending sum</li>
-        </ul>
-      </li>
-      <li>starting and ending sum can be found out in <code>O(n)<code></code></code></li>
-    </ul>
-  </li>
-</ul>
-      <h3 id="solution">
-          Solution <a href="#solution">#</a>
-      </h3>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
-    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">querySum</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">,</span> <span class="kt">int</span> <span class="n">arr</span><span class="o">[],</span> <span class="kt">int</span> <span class="n">q</span><span class="o">,</span> <span class="kt">int</span> <span class="n">queries</span><span class="o">[])</span>
-    <span class="o">{</span>
-        <span class="c1">// code here</span>
-        <span class="c1">// find prefix_sum and suffix_sum</span>
-        <span class="kt">int</span><span class="o">[]</span> <span class="n">preSum</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
-        <span class="kt">int</span><span class="o">[]</span> <span class="n">sufSum</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
-        
-        <span class="n">preSum</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-        <span class="n">sufSum</span><span class="o">[</span><span class="n">n</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-        <span class="kt">int</span> <span class="n">t</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
-            <span class="n">preSum</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]=</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="n">preSum</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-            <span class="n">t</span><span class="o">+=</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
-        <span class="o">}</span>
-        
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">--){</span>
-            <span class="n">sufSum</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]+</span><span class="n">sufSum</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">];</span>
-        <span class="o">}</span>
-        
-        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">res</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
-        
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">*</span><span class="n">q</span><span class="o">;</span><span class="n">i</span><span class="o">+=</span><span class="mi">2</span><span class="o">){</span>
-            <span class="n">res</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">t</span><span class="o">-</span><span class="n">preSum</span><span class="o">[</span><span class="n">queries</span><span class="o">[</span><span class="n">i</span><span class="o">]-</span><span class="mi">1</span><span class="o">]-</span><span class="n">sufSum</span><span class="o">[</span><span class="n">queries</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]]);</span>
-        <span class="o">}</span>
-        
-        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
+        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
+    </div>
+    <div class="bio">
+	    Journey to One Piece
+        <p>
+	    <a href="https://swarag-n.github.io/Schatz/about/">> About </a>
+        </p>
+        <p>
+            <a href="https://swarag-n.github.io/Schatz/archive/">> Archive</a>
+        </p>
+    </div>
 </section>
-<section>
-  <nav class="post-nav">
-    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/17/spiral-order-in-matrix">
-      <div class="nav-arrow">Previous</div>
-      <span class="post-title">Spiral order in matrix.</span>
-    </a>
-    <a class="post-nav-item post-nav-next" href="/Schatz/2021/09/18/arrays-intersection">
-      <div class="nav-arrow">Next</div>
-      <span class="post-title">Intersection of Two Arrays II</span>
-    </a>
-  </nav>
+<div class="search-article">
+    <label for="search-input" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </label>
+    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+    <ul id="search-results"></ul>
+</div>
+<section class="posts" id="Blog">
+      <h2>
+          BLOG
+      </h2>
+    <ul>
+        <li>
+		<a href="https://swarag-n.github.io/Schatz/2021/09/14/remove-loop-in-linkedlist">Remove loop in Linked List</a>
+            <time datetime="2021-09-14T00:00:00-05:00">Sep 14, 2021</time>
+        </li>
+    </ul>
+        <div class="pagination">
+            <a href="/Schatz/page3">&laquo; Prev</a>
+            <a href="/Schatz/">1</a>
+            <a href="/Schatz/page2">2</a>
+            <a href="/Schatz/page3">3</a>
+            <em>4</em>
+            <span>Next &raquo;</span>
+        </div>
 </section>
   </main>
   <script>
