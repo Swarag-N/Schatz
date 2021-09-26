@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="hard problems either in leetcode, geeksforgeeks or others.">
+      <meta name="description" content="Given a word pat and a text txt. Return the count of the occurences of anagrams of the word in the text.">
   <title>
-          hard
+          Count Occurences of Anagrams
         -
       Schatz
     </title>
@@ -38,98 +38,82 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #hard
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/24/check-tree-traversal">Check Tree Traversal</a><time
-        datetime="2021-09-24T00:00:00-05:00">Sep 24, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz//2021/09/19/expression-add-operators">Expression Add Operators</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-  </ul>
-</section>
-<section class="tags">
-      <h2>
-          All tags:
+  <time datetime="2021-09-26T00:00:00-05:00">Sep 26, 2021 - 1' reading</time>
+      <h1 class="title">
+          Count Occurences of Anagrams
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/note">note</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Given a word pat and a text txt. Return the count of the occurences of anagrams of the word in the text.</p>
+      <h2 id="note">
+          Note <a href="#note">#</a>
       </h2>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (4), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (2), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gf/">gf (1), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (12), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (12), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (6), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (4), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (13), 
-      </a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (4)
-      </a>
-    </li>
-  </ul>
+<ul>
+  <li>Check for substrings not subsequence or subset. <a href="https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/">Read Here</a></li>
+</ul>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+
+    <span class="kt">int</span> <span class="nf">search</span><span class="o">(</span><span class="nc">String</span> <span class="n">pat</span><span class="o">,</span> <span class="nc">String</span> <span class="n">txt</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// code here</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">pat</span><span class="o">.</span><span class="na">length</span><span class="o">()&gt;</span><span class="n">txt</span><span class="o">.</span><span class="na">length</span><span class="o">()){</span>
+            <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span><span class="sc">'a'</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">pl</span> <span class="o">=</span> <span class="n">pat</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+        <span class="kt">int</span> <span class="n">tl</span> <span class="o">=</span> <span class="n">txt</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+        
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">pat_cnt</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">26</span><span class="o">];</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">txt_cnt</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">26</span><span class="o">];</span>
+        
+        <span class="k">for</span><span class="o">(;</span><span class="n">idx</span><span class="o">&lt;</span><span class="n">pl</span><span class="o">;</span><span class="n">idx</span><span class="o">++){</span>
+            <span class="n">pat_cnt</span><span class="o">[((</span><span class="kt">int</span><span class="o">)</span><span class="n">pat</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">idx</span><span class="o">))-</span><span class="n">a</span><span class="o">]++;</span>
+            <span class="n">txt_cnt</span><span class="o">[((</span><span class="kt">int</span><span class="o">)</span><span class="n">txt</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">idx</span><span class="o">))-</span><span class="n">a</span><span class="o">]++;</span>
+        <span class="o">}</span>
+        
+        <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">pat_cnt</span><span class="o">,</span><span class="n">txt_cnt</span><span class="o">)){</span>
+            <span class="n">res</span><span class="o">++;</span>
+        <span class="o">}</span>
+        
+        <span class="k">for</span><span class="o">(;</span><span class="n">idx</span><span class="o">&lt;</span><span class="n">tl</span><span class="o">;</span><span class="n">idx</span><span class="o">++){</span>
+            <span class="n">txt_cnt</span><span class="o">[((</span><span class="kt">int</span><span class="o">)</span><span class="n">txt</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">idx</span><span class="o">-</span><span class="n">pl</span><span class="o">))-</span><span class="n">a</span><span class="o">]--;</span>
+            <span class="n">txt_cnt</span><span class="o">[((</span><span class="kt">int</span><span class="o">)</span><span class="n">txt</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">idx</span><span class="o">))-</span><span class="n">a</span><span class="o">]++;</span>
+            
+            <span class="k">if</span><span class="o">(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">pat_cnt</span><span class="o">,</span><span class="n">txt_cnt</span><span class="o">)){</span>
+                <span class="n">res</span><span class="o">++;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        
+        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/25/largest-subarray-with-0-sum">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Largest subarray with 0 sum</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

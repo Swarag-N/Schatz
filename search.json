@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Count Occurences of Anagrams",
+      "category" : "",
+      "tags"     : "gfg, potd, java, medium, note",
+      "url"      : "/Schatz/2021/09/26/count-occurences-of-anagrams",
+      "date"     : "2021-09-26 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Largest subarray with 0 sum",
       "category" : "",
       "tags"     : "gfg, potd, java, easy, appris",
@@ -11,7 +19,7 @@
     {
       "title"    : "Check Tree Traversal",
       "category" : "",
-      "tags"     : "gf, potd, java, hard",
+      "tags"     : "gf, potd, java, hard, note",
       "url"      : "/Schatz/2021/09/24/check-tree-traversal",
       "date"     : "2021-09-24 00:00:00 -0500"
     } ,
@@ -51,7 +59,7 @@
     {
       "title"    : "Median of 2 Sorted Arrays of Different Sizes",
       "category" : "",
-      "tags"     : "gfg, potd, java, python, hard, appris, edge_case",
+      "tags"     : "gfg, potd, java, python, hard, appris, edge_case, note",
       "url"      : "/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes",
       "date"     : "2021-09-19 00:00:00 -0500"
     } ,
@@ -59,7 +67,7 @@
     {
       "title"    : "Expression Add Operators",
       "category" : "",
-      "tags"     : "leetcode, java, hard",
+      "tags"     : "leetcode, java, hard, note",
       "url"      : "/Schatz/2021/09/19/expression-add-operators",
       "date"     : "2021-09-19 00:00:00 -0500"
     } ,
