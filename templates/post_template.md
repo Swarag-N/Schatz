@@ -6,7 +6,9 @@ summary:
 tags:
     - gfg
     - leetcode
+    - codechef
     - potd
+    - 100daysOfCode
     - java
     - python
     - easy

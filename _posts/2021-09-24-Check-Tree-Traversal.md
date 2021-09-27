@@ -4,7 +4,7 @@ title: Check Tree Traversal
 description: Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.
 summary: Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.
 tags:
-    - gf
+    - gfg
     - potd
     - java
     - hard
