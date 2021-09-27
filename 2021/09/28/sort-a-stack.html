@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="A list of edge cases.">
+      <meta name="description" content="Given a stack, the task is to sort it such that the top of the stack has the greatest element.">
   <title>
-          edge_case
+          Sort a stack
         -
       Schatz
     </title>
@@ -38,82 +38,59 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #edge_case
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/27/finding-middle-element-in-a-linked-list">Finding middle element in a linked list</a><time
-        datetime="2021-09-27T00:00:00-05:00">Sep 27, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a><time
-        datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/14/remove-loop-in-linkedlist">Remove loop in Linked List</a><time
-        datetime="2021-09-14T00:00:00-05:00">Sep 14, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-28T00:00:00-05:00">Sep 28, 2021 - 1' reading</time>
+      <h1 class="title">
+          Sort a stack
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/easy">easy</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Given a stack, the task is to sort it such that the top of the stack has the greatest element.</p>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">GfG</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">sort</span><span class="o">(</span><span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">s</span><span class="o">){</span>
+		<span class="c1">//add code here.</span>
+		<span class="k">if</span> <span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">true</span><span class="o">){</span>
+		    <span class="nc">Integer</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">pop</span><span class="o">();</span>
+		    <span class="n">s</span> <span class="o">=</span> <span class="n">sort</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+		    <span class="n">sortInsert</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="n">temp</span><span class="o">);</span>
+		<span class="o">}</span>
+		<span class="k">return</span> <span class="n">s</span><span class="o">;</span>
+	<span class="o">}</span>
+	
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">sortInsert</span><span class="o">(</span><span class="nc">Stack</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">s</span><span class="o">,</span> <span class="nc">Integer</span> <span class="n">val</span><span class="o">){</span>
+	    <span class="k">if</span><span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()</span> <span class="o">==</span> <span class="kc">true</span> <span class="o">||</span> <span class="n">s</span><span class="o">.</span><span class="na">peek</span><span class="o">()</span> <span class="o">&lt;=</span> <span class="n">val</span><span class="o">){</span>
+	        <span class="n">s</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">val</span><span class="o">);</span>
+	    <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+	        <span class="nc">Integer</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">pop</span><span class="o">();</span>
+	        <span class="n">sortInsert</span><span class="o">(</span><span class="n">s</span><span class="o">,</span><span class="n">val</span><span class="o">);</span>
+	        <span class="n">s</span><span class="o">.</span><span class="na">push</span><span class="o">(</span><span class="n">temp</span><span class="o">);</span>
+	    <span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul class="tags-list">
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/start13c/">START13C (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/codechef/">codechef (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (8), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (15), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (6), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (15), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (8)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/27/the-preparations">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">The Preparations</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

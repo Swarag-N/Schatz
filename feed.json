@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/09/28/sort-a-stack",
+            "title": "Sort a stack",
+            "summary": "Given a stack, the task is to sort it such that the top of the stack has the greatest element.",
+            "content_text": "Problem StatementGiven a stack, the task is to sort it such that the top of the stack has the greatest element.Solutionclass GfG{\tpublic Stack&lt;Integer&gt; sort(Stack&lt;Integer&gt; s){\t\t//add code here.\t\tif (s.isEmpty() != true){\t\t    Integer temp = s.pop();\t\t    s = sort(s);\t\t    sortInsert(s,temp);\t\t}\t\treturn s;\t}\t\tpublic void sortInsert(Stack&lt;Integer&gt; s, Integer val){\t    if(s.isEmpty() == true || s.peek() &lt;= val){\t        s.push(val);\t    }else{\t        Integer temp = s.pop();\t        sortInsert(s,val);\t        s.push(temp);\t    }\t}}",
+            "content_html": "<h3 id=\"problem-statement\">Problem Statement</h3><p>Given a stack, the task is to sort it such that the top of the stack has the greatest element.</p><h3 id=\"solution\">Solution</h3><div class=\"language-java highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"kd\">class</span> <span class=\"nc\">GfG</span><span class=\"o\">{</span>\t<span class=\"kd\">public</span> <span class=\"nc\">Stack</span><span class=\"o\">&lt;</span><span class=\"nc\">Integer</span><span class=\"o\">&gt;</span> <span class=\"nf\">sort</span><span class=\"o\">(</span><span class=\"nc\">Stack</span><span class=\"o\">&lt;</span><span class=\"nc\">Integer</span><span class=\"o\">&gt;</span> <span class=\"n\">s</span><span class=\"o\">){</span>\t\t<span class=\"c1\">//add code here.</span>\t\t<span class=\"k\">if</span> <span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">isEmpty</span><span class=\"o\">()</span> <span class=\"o\">!=</span> <span class=\"kc\">true</span><span class=\"o\">){</span>\t\t    <span class=\"nc\">Integer</span> <span class=\"n\">temp</span> <span class=\"o\">=</span> <span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">pop</span><span class=\"o\">();</span>\t\t    <span class=\"n\">s</span> <span class=\"o\">=</span> <span class=\"n\">sort</span><span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">);</span>\t\t    <span class=\"n\">sortInsert</span><span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">,</span><span class=\"n\">temp</span><span class=\"o\">);</span>\t\t<span class=\"o\">}</span>\t\t<span class=\"k\">return</span> <span class=\"n\">s</span><span class=\"o\">;</span>\t<span class=\"o\">}</span>\t\t<span class=\"kd\">public</span> <span class=\"kt\">void</span> <span class=\"nf\">sortInsert</span><span class=\"o\">(</span><span class=\"nc\">Stack</span><span class=\"o\">&lt;</span><span class=\"nc\">Integer</span><span class=\"o\">&gt;</span> <span class=\"n\">s</span><span class=\"o\">,</span> <span class=\"nc\">Integer</span> <span class=\"n\">val</span><span class=\"o\">){</span>\t    <span class=\"k\">if</span><span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">isEmpty</span><span class=\"o\">()</span> <span class=\"o\">==</span> <span class=\"kc\">true</span> <span class=\"o\">||</span> <span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">peek</span><span class=\"o\">()</span> <span class=\"o\">&lt;=</span> <span class=\"n\">val</span><span class=\"o\">){</span>\t        <span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">push</span><span class=\"o\">(</span><span class=\"n\">val</span><span class=\"o\">);</span>\t    <span class=\"o\">}</span><span class=\"k\">else</span><span class=\"o\">{</span>\t        <span class=\"nc\">Integer</span> <span class=\"n\">temp</span> <span class=\"o\">=</span> <span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">pop</span><span class=\"o\">();</span>\t        <span class=\"n\">sortInsert</span><span class=\"o\">(</span><span class=\"n\">s</span><span class=\"o\">,</span><span class=\"n\">val</span><span class=\"o\">);</span>\t        <span class=\"n\">s</span><span class=\"o\">.</span><span class=\"na\">push</span><span class=\"o\">(</span><span class=\"n\">temp</span><span class=\"o\">);</span>\t    <span class=\"o\">}</span>\t<span class=\"o\">}</span><span class=\"o\">}</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/09/28/sort-a-stack",
+            
+            
+            
+            "tags": ["gfg","potd","java","easy"],
+            
+            "date_published": "2021-09-28T00:00:00-05:00",
+            "date_modified": "2021-09-28T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/09/27/the-preparations",
             "title": "The Preparations",
             "summary": "Chef has an exam which will start exactly M minutes from now. However, instead of preparing for his exam, Chef started watching Season-1 of Superchef. Season-1 has N episodes, and the duration of each episode is K minutes.",
