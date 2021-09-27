@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="learnet something new - Appris">
+      <meta name="description" content="">
   <title>
-          appris
+          Chef in Vaccination Queue
         -
       Schatz
     </title>
@@ -38,82 +38,55 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #appris
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum">Largest subarray with 0 sum</a><time
-        datetime="2021-09-25T00:00:00-05:00">Sep 25, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match">Repeated String Match</a><time
-        datetime="2021-09-22T00:00:00-05:00">Sep 22, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a><time
-        datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-27T00:00:00-05:00">Sep 27, 2021 - 1' reading</time>
+      <h1 class="title">
+          Chef in Vaccination Queue
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/codechef">codechef</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/START13C">START13C</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/easy">easy</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>There are N people in the vaccination queue, Chef is standing on the Pth position from the front of the queue. It takes X minutes to vaccinate a child and Y minutes to vaccinate an elderly person. Assume Chef is an elderly person.</p>
+<p>You are given a binary array A1,A2,…,AN of length N, where Ai=1 denotes there is an elderly person standing on the ith position of the queue, Ai=0 denotes there is a child standing on the ith position of the queue. You are also given the three integers P,X,Y. Find the number of minutes after which Chef’s vaccination will be completed.</p>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># cook your dish here2
+</span><span class="n">T</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    <span class="n">N</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)))</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">P</span><span class="p">):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="s">"0"</span><span class="p">):</span>
+           <span class="n">val</span><span class="o">+=</span><span class="n">X</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">val</span><span class="o">+=</span><span class="n">Y</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul class="tags-list">
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/start13c/">START13C (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/codechef/">codechef (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (13), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (6), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (8)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/26/count-occurences-of-anagrams">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Count Occurences of Anagrams</span>
+    </a>
+    <a class="post-nav-item post-nav-next" href="/Schatz/2021/09/27/finding-middle-element-in-a-linked-list">
+      <div class="nav-arrow">Next</div>
+      <span class="post-title">Finding middle element in a linked list</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

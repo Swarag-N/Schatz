@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="learnet something new - Appris">
+      <meta name="description" content="Chef wants to cross a hallway of N doors. These N doors are represented as a string. Each door is initially either open or close, represented by 1 or 0 respectively. Chef is required to go through all the doors one by one in the order that they appear, starting from the leftmost door and moving only rightwards at each step.">
   <title>
-          appris
+          Magical Doors
         -
       Schatz
     </title>
@@ -38,82 +38,68 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #appris
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum">Largest subarray with 0 sum</a><time
-        datetime="2021-09-25T00:00:00-05:00">Sep 25, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match">Repeated String Match</a><time
-        datetime="2021-09-22T00:00:00-05:00">Sep 22, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a><time
-        datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-27T00:00:00-05:00">Sep 27, 2021 - 1' reading</time>
+      <h1 class="title">
+          Magical Doors
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/codechef">codechef</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/START13C">START13C</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/easy">easy</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Chef wants to cross a hallway of N doors. These N doors are represented as a string. Each door is initially either open or close, represented by 1 or 0 respectively. Chef is required to go through all the doors one by one in the order that they appear, starting from the leftmost door and moving only rightwards at each step.</p>
+<p>To make the journey easier, Chef has a magic wand, using which Chef can flip the status of all the doors at once. Determine the minimum number of times Chef has to use this wand to cross the hallway of doors.</p>
+<p>For example, the doors are 10011. Chef will start from the left and enter the first door. After passing through that door, the magic wand is waved. This flips the string to 01100. Now Chef passes through the next two doors in one go. Again, just before reaching the 4th door, the magic wand is waved. Now that the string is in its original state, Chef passes through the last two doors as well. The minimum number of times the magic wand needed to be used here was 2.</p>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># cook your dish here
+</span><span class="n">T</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    <span class="n">S</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">if</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="s">"1"</span><span class="p">):</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="ow">and</span> <span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">i</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span>
+                <span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
+                <span class="n">i</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span>
+            <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="ow">and</span> <span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">i</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span>
+                <span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
+                <span class="n">i</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul class="tags-list">
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/start13c/">START13C (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/codechef/">codechef (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (13), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (6), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (8)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/27/finding-middle-element-in-a-linked-list">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Finding middle element in a linked list</span>
+    </a>
+    <a class="post-nav-item post-nav-next" href="/Schatz/2021/09/27/maximum-light-up">
+      <div class="nav-arrow">Next</div>
+      <span class="post-title">Maximum Light Up</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

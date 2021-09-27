@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="learnet something new - Appris">
+      <meta name="description" content="Chef has allocated himself a budget of P rupees to buy Diwali crackers. There are only 3 types of crackers available in the market and each type of cracker can be bought any number of times.">
   <title>
-          appris
+          Maximum Light Up
         -
       Schatz
     </title>
@@ -38,82 +38,68 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #appris
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum">Largest subarray with 0 sum</a><time
-        datetime="2021-09-25T00:00:00-05:00">Sep 25, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match">Repeated String Match</a><time
-        datetime="2021-09-22T00:00:00-05:00">Sep 22, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a><time
-        datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-  </ul>
+  <time datetime="2021-09-27T00:00:00-05:00">Sep 27, 2021 - 1' reading</time>
+      <h1 class="title">
+          Maximum Light Up
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/codechef">codechef</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/START13C">START13C</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/python">python</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/easy">easy</a></span>
+      <h3 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
+      </h3>
+<p>Chef has allocated himself a budget of P rupees to buy Diwali crackers. There are only 3 types of crackers available in the market and each type of cracker can be bought any number of times.</p>
+<p>Fuljhari, where each costs a rupees
+Anar, where each costs b rupees
+Chakri, where each costs c rupees
+The crackers have the following interesting properties:-</p>
+<p>A Fuljhari can be lit on its own
+To light an Anar, you will need x Fuljharis
+To light a Chakri, you will need y Fuljharis
+What’s the maximum total of Anars and Chakris that Chef can light up with his given budget.</p>
+      <h3 id="solution">
+          Solution <a href="#solution">#</a>
+      </h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># cook your dish here
+</span><span class="n">T</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span>
+    <span class="n">P</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">().</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="p">;</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">c</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="n">y</span><span class="p">;</span>
+    
+    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">P</span><span class="o">//</span><span class="n">b</span> <span class="o">&gt;</span> <span class="n">P</span><span class="o">//</span><span class="n">c</span><span class="p">):</span>
+        <span class="n">cnt</span><span class="o">+=</span> <span class="n">P</span><span class="o">//</span><span class="n">b</span>
+        <span class="n">rem</span> <span class="o">=</span> <span class="n">P</span> <span class="o">-</span> <span class="p">(</span><span class="n">P</span><span class="o">//</span><span class="n">b</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+        <span class="n">cnt</span> <span class="o">+=</span> <span class="n">rem</span><span class="o">//</span><span class="n">c</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">cnt</span><span class="o">+=</span> <span class="n">P</span><span class="o">//</span><span class="n">c</span>
+        <span class="n">rem</span> <span class="o">=</span> <span class="n">P</span> <span class="o">-</span> <span class="p">(</span><span class="n">P</span><span class="o">//</span><span class="n">c</span> <span class="o">*</span> <span class="n">c</span><span class="p">)</span>
+        <span class="n">cnt</span> <span class="o">+=</span> <span class="n">rem</span><span class="o">//</span><span class="n">b</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</code></pre></div></div>
 </section>
-<section class="tags">
-      <h2>
-          All tags:
-      </h2>
-  <ul class="tags-list">
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/start13c/">START13C (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/codechef/">codechef (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (13), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (6), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (14), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (8)
-      </a>
-    </li>
-  </ul>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/27/magical-doors">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Magical Doors</span>
+    </a>
+    <a class="post-nav-item post-nav-next" href="/Schatz/2021/09/27/the-preparations">
+      <div class="nav-arrow">Next</div>
+      <span class="post-title">The Preparations</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

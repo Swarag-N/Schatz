@@ -1,6 +1,46 @@
 [
   
     {
+      "title"    : "The Preparations",
+      "category" : "",
+      "tags"     : "codechef, START13C, python, easy",
+      "url"      : "/Schatz/2021/09/27/the-preparations",
+      "date"     : "2021-09-27 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Maximum Light Up",
+      "category" : "",
+      "tags"     : "codechef, START13C, python, easy",
+      "url"      : "/Schatz/2021/09/27/maximum-light-up",
+      "date"     : "2021-09-27 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Magical Doors",
+      "category" : "",
+      "tags"     : "codechef, START13C, python, easy",
+      "url"      : "/Schatz/2021/09/27/magical-doors",
+      "date"     : "2021-09-27 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Finding middle element in a linked list",
+      "category" : "",
+      "tags"     : "gfg, potd, java, easy, edge_case",
+      "url"      : "/Schatz/2021/09/27/finding-middle-element-in-a-linked-list",
+      "date"     : "2021-09-27 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Chef in Vaccination Queue",
+      "category" : "",
+      "tags"     : "codechef, START13C, python, easy",
+      "url"      : "/Schatz/2021/09/27/chef-in-vaccination-queue",
+      "date"     : "2021-09-27 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Count Occurences of Anagrams",
       "category" : "",
       "tags"     : "gfg, potd, java, medium, note",
@@ -19,7 +59,7 @@
     {
       "title"    : "Check Tree Traversal",
       "category" : "",
-      "tags"     : "gf, potd, java, hard, note",
+      "tags"     : "gfg, potd, java, hard, note",
       "url"      : "/Schatz/2021/09/24/check-tree-traversal",
       "date"     : "2021-09-24 00:00:00 -0500"
     } ,
