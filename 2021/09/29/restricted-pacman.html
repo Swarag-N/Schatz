@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="Given two sorted arrays arr1 and arr2 of size N and M respectively and an element K. The task is to find the element that would be at the k’th position of the final sorted array.">
+      <meta name="description" content="In the game of Restricted Pacman, an infinite linear path is given. Pacman has to start at position 0 and eat as many candies as possible. In one move he can only jump a distance of either M or N.  If M and N are coprime numbers, find how many candies will be left on the board after the game is over.">
   <title>
-          K-th element of two sorted Arrays
+          Restricted Pacman
         -
       Schatz
     </title>
@@ -45,73 +45,117 @@
       <div></div>
     </button>
   </div>
-  <time datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021 - 1' reading</time>
+  <time datetime="2021-09-29T00:00:00-05:00">Sep 29, 2021 - 1' reading</time>
       <h1 class="title">
-          K-th element of two sorted Arrays
+          Restricted Pacman
       </h1>
   <span class="meta">
     <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
     <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
-    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a></span>
-      <h3 id="problem-statement">
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/appris">appris</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/edge_case">edge_case</a></span>
+      <h2 id="problem-statement">
           Problem Statement <a href="#problem-statement">#</a>
-      </h3>
-<p>Given two sorted arrays arr1 and arr2 of size N and M respectively and an element K. The task is to find the element that would be at the k’th position of the final sorted array.</p>
-      <h3 id="edge-cases">
-          Edge Cases <a href="#edge-cases">#</a>
+      </h2>
+<p>In the game of Restricted Pacman, an infinite linear path is given. Pacman has to start at position 0 and eat as many candies as possible. In one move he can only jump a distance of either M or N.  If M and N are coprime numbers, find how many candies will be left on the board after the game is over.<br />
+Note: The result is always finite as after a point X every index in the infinite path can be visited.</p>
+      <h3 id="edge-case">
+          Edge Case <a href="#edge-case">#</a>
       </h3>
 <ul>
-  <li>What if arrays are sorted and given.</li>
+  <li>Check with upper limits.</li>
+  <li>M and N are coprime, to check for prime factors before testing with code.</li>
 </ul>
-<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5 7 6
-72 86 100 112 113
-119 256 265 349 445 770 892
-</code></pre></div></div>
-      <h3 id="solution">
-          Solution <a href="#solution">#</a>
+      <h3 id="note">
+          Note <a href="#note">#</a>
       </h3>
-<p>Code:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kt">long</span> <span class="nf">kthElement</span><span class="o">(</span> <span class="kt">int</span> <span class="n">arr1</span><span class="o">[],</span> <span class="kt">int</span> <span class="n">arr2</span><span class="o">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="o">,</span> <span class="kt">int</span> <span class="n">m</span><span class="o">,</span> <span class="kt">int</span> <span class="n">k</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kt">int</span> <span class="n">a1</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-        <span class="kt">int</span> <span class="n">a2</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-        <span class="kt">boolean</span> <span class="n">flag</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
-        
-        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">k</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
-            <span class="k">if</span><span class="o">(</span><span class="n">a1</span><span class="o">&gt;=</span><span class="n">n</span><span class="o">){</span>
-                <span class="n">flag</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
-                <span class="n">a2</span><span class="o">++;</span>
-            <span class="o">}</span><span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">a2</span><span class="o">&gt;=</span><span class="n">m</span><span class="o">){</span>
-                <span class="n">flag</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
-                <span class="n">a1</span><span class="o">++;</span>
-            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">arr1</span><span class="o">[</span><span class="n">a1</span><span class="o">]&lt;=</span><span class="n">arr2</span><span class="o">[</span><span class="n">a2</span><span class="o">]){</span>
-                    <span class="n">flag</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
-                    <span class="n">a1</span><span class="o">++;</span>
-                <span class="o">}</span><span class="k">else</span><span class="o">{</span>
-                    <span class="n">flag</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
-                    <span class="n">a2</span><span class="o">++;</span>
-                <span class="o">}</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-        <span class="k">if</span><span class="o">(</span><span class="n">flag</span><span class="o">){</span>
-            <span class="k">return</span>  <span class="n">arr1</span><span class="o">[</span><span class="n">a1</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
-        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
-            <span class="k">return</span> <span class="n">arr2</span><span class="o">[</span><span class="n">a2</span><span class="o">-</span><span class="mi">1</span><span class="o">];</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
+<ul>
+  <li><code>M</code> and <code>N</code> are coprimes, so there is no chance of double counting a specific number.</li>
+</ul>
+      <h3 id="trivia">
+          Trivia <a href="#trivia">#</a>
+      </h3>
+<p>Find the largest index that can’t be obtained using any combination of M &amp; N using <a href="https://mathworld.wolfram.com/FrobeniusNumber.html">Frobenius Number</a> which defines X = (M * N) – M – N.</p>
+      <h2 id="solution">
+          Solution <a href="#solution">#</a>
+      </h2>
+<ol>
+  <li><code>O(1)</code> if you are familar with math behind <a href="https://mathworld.wolfram.com/CoinProblem.html">Coin Problem</a>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
+ <span class="kd">static</span> <span class="kt">int</span> <span class="nf">candies</span><span class="o">(</span><span class="kt">int</span> <span class="n">m</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">){</span>
+     <span class="c1">// Your code goes here</span>
+     <span class="k">return</span> <span class="o">((</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="o">)*(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">)/</span><span class="mi">2</span><span class="o">);</span>
+ <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li><code>O(n)</code> Efficient Iterative DP Solution
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
+ <span class="kd">static</span> <span class="kt">int</span> <span class="nf">candies</span><span class="o">(</span><span class="kt">int</span> <span class="n">m</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">){</span>
+     <span class="c1">// Your code goes here</span>
+     <span class="kt">int</span> <span class="n">cnt</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+     <span class="kt">int</span> <span class="no">X</span> <span class="o">=</span> <span class="o">(</span><span class="n">n</span><span class="o">*</span><span class="n">m</span><span class="o">)-(</span><span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="o">)+</span><span class="mi">1</span><span class="o">;</span>
+     <span class="kt">boolean</span><span class="o">[]</span> <span class="n">flags</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="no">X</span><span class="o">];</span>
+     <span class="n">flags</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="kc">true</span><span class="o">;</span>
+     <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="no">X</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+         <span class="k">if</span><span class="o">(</span><span class="n">i</span><span class="o">-</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="n">n</span><span class="o">]==</span><span class="kc">true</span><span class="o">){</span>
+             <span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="kc">true</span><span class="o">;</span>
+         <span class="o">}</span>
+         <span class="k">if</span><span class="o">(</span><span class="n">i</span><span class="o">-</span><span class="n">m</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="n">m</span><span class="o">]==</span><span class="kc">true</span><span class="o">){</span>
+             <span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="kc">true</span><span class="o">;</span>
+         <span class="o">}</span>
+         <span class="k">if</span><span class="o">(!</span><span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">]){</span>
+             <span class="n">cnt</span><span class="o">++;</span>
+         <span class="o">}</span>
+     <span class="o">}</span>
+     <span class="k">return</span> <span class="n">cnt</span><span class="o">;</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Brute Force Recusrive DP Solution
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span>
+ <span class="kd">static</span> <span class="kt">int</span> <span class="no">N</span><span class="o">,</span><span class="no">M</span><span class="o">;</span>
+ <span class="kd">static</span> <span class="kt">int</span> <span class="nf">candies</span><span class="o">(</span><span class="kt">int</span> <span class="n">m</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">){</span>
+     <span class="c1">// Your code goes here</span>
+     <span class="no">N</span> <span class="o">=</span> <span class="n">n</span><span class="o">;</span>
+     <span class="no">M</span> <span class="o">=</span> <span class="n">m</span><span class="o">;</span>
+     <span class="kt">boolean</span><span class="o">[]</span> <span class="n">flags</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="n">n</span><span class="o">*</span><span class="n">m</span><span class="o">];</span>
+     <span class="n">rectoggle</span><span class="o">(</span><span class="n">flags</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+        
+     <span class="k">return</span> <span class="nf">cntflag</span><span class="o">(</span><span class="n">flags</span><span class="o">);</span>
+ <span class="o">}</span>
+    
+ <span class="kd">static</span> <span class="kt">void</span> <span class="nf">rectoggle</span><span class="o">(</span><span class="kt">boolean</span><span class="o">[]</span> <span class="n">flags</span><span class="o">,</span><span class="kt">int</span> <span class="n">i</span><span class="o">){</span>
+     <span class="k">if</span><span class="o">(</span><span class="n">i</span><span class="o">&lt;</span><span class="n">flags</span><span class="o">.</span><span class="na">length</span><span class="o">){</span>
+         <span class="n">flags</span><span class="o">[</span><span class="n">i</span><span class="o">]=</span><span class="kc">true</span><span class="o">;</span>
+         <span class="n">rectoggle</span><span class="o">(</span><span class="n">flags</span><span class="o">,</span><span class="n">i</span><span class="o">+</span><span class="no">M</span><span class="o">);</span>
+         <span class="n">rectoggle</span><span class="o">(</span><span class="n">flags</span><span class="o">,</span><span class="n">i</span><span class="o">+</span><span class="no">N</span><span class="o">);</span>
+     <span class="o">}</span>
+     <span class="k">return</span><span class="o">;</span>
+ <span class="o">}</span>
+    
+ <span class="kd">static</span> <span class="kt">int</span> <span class="nf">cntflag</span><span class="o">(</span><span class="kt">boolean</span><span class="o">[]</span> <span class="n">flags</span><span class="o">){</span>
+     <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+     <span class="k">for</span><span class="o">(</span><span class="kt">boolean</span> <span class="nl">flag:</span><span class="n">flags</span><span class="o">){</span>
+         <span class="k">if</span><span class="o">(!</span><span class="n">flag</span><span class="o">){</span>
+             <span class="n">cnt</span><span class="o">++;</span>
+         <span class="o">}</span>
+     <span class="o">}</span>
+     <span class="k">return</span> <span class="n">cnt</span><span class="o">;</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
 </section>
 <section>
   <nav class="post-nav">
-    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/16/n-meetings-in-one-room">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/28/sort-a-stack">
       <div class="nav-arrow">Previous</div>
-      <span class="post-title">N meetings in one room</span>
-    </a>
-    <a class="post-nav-item post-nav-next" href="/Schatz/2021/09/17/spiral-order-in-matrix">
-      <div class="nav-arrow">Next</div>
-      <span class="post-title">Spiral order in matrix.</span>
+      <span class="post-title">Sort a stack</span>
     </a>
   </nav>
 </section>
