@@ -50,7 +50,7 @@ Given two sorted arrays array1 and array2 of size m and n respectively. Find the
 2
 ```
 
-### Solution
+## Solution
 ### Java
 ```java
 

@@ -21,16 +21,16 @@ tags:
 minute: 1
 ---
 
-### Problem Statement
+## Problem Statement
 
-## Appris
+### Appris
 
-## Edge Case
+### Edge Case
 
-## Trivia
+### Trivia
 
 
-### Solution
+## Solution
 ```java
 
 ```
