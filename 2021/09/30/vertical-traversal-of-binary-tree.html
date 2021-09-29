@@ -15,11 +15,11 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="">
+      <meta name="description" content="Given a Binary Tree, find the vertical traversal of it starting from the leftmost level to the rightmost level. If there are multiple nodes passing through a vertical line, then they should be printed as they appear in level order traversal of the tree.">
   <title>
-        Page 4 of 5 -
+          Vertical Traversal of Binary Tree
+        -
       Schatz
-        - Journey to One Piece
     </title>
     <link rel="alternate" type="application/atom+xml" title="Schatz" href="https://swarag-n.github.io/Schatz/atom.xml">
     <link rel="alternate" type="application/json" title="Schatz" href="https://swarag-n.github.io/Schatz/feed.json" />
@@ -38,72 +38,95 @@
  </script>
 <body>
   <main>
-    <section id="intro">
-    <div class="flex-row-between">
-      <h1>
-          Hi 👋
+    <section class="post">
+  <div class="flex-row-between">
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <time datetime="2021-09-30T00:00:00-05:00">Sep 30, 2021 - 1' reading</time>
+      <h1 class="title">
+          Vertical Traversal of Binary Tree
       </h1>
-        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-            <div></div>
-        </button>
-    </div>
-    <div class="bio">
-	    Journey to One Piece
-        <p>
-	    <a href="https://swarag-n.github.io/Schatz/about/">> About </a>
-        </p>
-        <p>
-            <a href="https://swarag-n.github.io/Schatz/archive/">> Archive</a>
-        </p>
-    </div>
-</section>
-<div class="search-article">
-    <label for="search-input" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </label>
-    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
-    <ul id="search-results"></ul>
-</div>
-<section class="posts" id="Blog">
-      <h2>
-          BLOG
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/note">note</a></span>
+      <h2 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
       </h2>
-    <ul>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/expression-add-operators">Expression Add Operators</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/arrays-intersection">Intersection of Two Arrays II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/sum-of-query-ii">Sum of Query II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/17/spiral-order-in-matrix">Spiral order in matrix.</a>
-            <time datetime="2021-09-17T00:00:00-05:00">Sep 17, 2021</time>
-        </li>
-    </ul>
-        <div class="pagination">
-            <a href="/Schatz/page3">&laquo; Prev</a>
-            <a href="/Schatz/">1</a>
-            <a href="/Schatz/page2">2</a>
-            <a href="/Schatz/page3">3</a>
-            <em>4</em>
-            <a href="/Schatz/page5">5</a>
-            <a href="/Schatz/page5">Next &raquo;</a>
-        </div>
+<p>Given a Binary Tree, find the vertical traversal of it starting from the leftmost level to the rightmost level.
+If there are multiple nodes passing through a vertical line, then they should be printed as they appear in level order traversal of the tree.</p>
+      <h3 id="note">
+          Note <a href="#note">#</a>
+      </h3>
+<ul>
+  <li>Check for traversal type asked.</li>
+</ul>
+      <h2 id="solution">
+          Solution <a href="#solution">#</a>
+      </h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">//User function Template for Java</span>
+<span class="kd">class</span> <span class="nc">MetaNode</span><span class="o">{</span>
+    <span class="nc">Node</span> <span class="n">head</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">pos</span><span class="o">;</span>
+    <span class="nc">MetaNode</span><span class="o">(</span><span class="nc">Node</span> <span class="n">root</span><span class="o">,</span><span class="kt">int</span> <span class="n">position</span><span class="o">){</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="n">root</span><span class="o">;</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="n">position</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+
+<span class="kd">class</span> <span class="nc">Solution</span>
+<span class="o">{</span>
+    <span class="c1">//Function to find the vertical order traversal of Binary Tree.</span>
+    <span class="kd">static</span> <span class="nc">ArrayList</span> <span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nf">verticalOrder</span><span class="o">(</span><span class="nc">Node</span> <span class="n">root</span><span class="o">){</span>
+        <span class="c1">// add your code here</span>
+        <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">,</span> <span class="nc">List</span> <span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;&gt;</span>  <span class="n">res</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TreeMap</span><span class="o">&lt;&gt;();</span>
+        <span class="nc">ArrayDeque</span><span class="o">&lt;</span><span class="nc">MetaNode</span><span class="o">&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayDeque</span><span class="o">&lt;&gt;();</span>
+        
+        <span class="nc">MetaNode</span> <span class="n">head</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">MetaNode</span><span class="o">(</span><span class="n">root</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">q</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">head</span><span class="o">);</span>
+        
+        <span class="k">while</span><span class="o">(</span><span class="n">q</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">()!=</span><span class="kc">true</span><span class="o">){</span>
+            <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">cnt</span><span class="o">;</span><span class="n">i</span><span class="o">++){</span>
+                <span class="nc">MetaNode</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="na">pop</span><span class="o">();</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">containsKey</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">pos</span><span class="o">)!=</span><span class="kc">true</span><span class="o">){</span>
+                    <span class="n">res</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">pos</span><span class="o">,</span><span class="k">new</span> <span class="nc">LinkedList</span> <span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;());</span>
+                <span class="o">}</span>
+                <span class="n">res</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">pos</span><span class="o">).</span><span class="na">add</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">data</span><span class="o">);</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">left</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+                    <span class="n">q</span><span class="o">.</span><span class="na">addLast</span><span class="o">(</span><span class="k">new</span> <span class="nc">MetaNode</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">left</span><span class="o">,</span><span class="n">cur</span><span class="o">.</span><span class="na">pos</span><span class="o">-</span><span class="mi">1</span><span class="o">));</span>
+                <span class="o">}</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">right</span><span class="o">!=</span><span class="kc">null</span><span class="o">){</span>
+                    <span class="n">q</span><span class="o">.</span><span class="na">addLast</span><span class="o">(</span><span class="k">new</span> <span class="nc">MetaNode</span><span class="o">(</span><span class="n">cur</span><span class="o">.</span><span class="na">head</span><span class="o">.</span><span class="na">right</span><span class="o">,</span><span class="n">cur</span><span class="o">.</span><span class="na">pos</span><span class="o">+</span><span class="mi">1</span><span class="o">));</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        
+        <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">soln</span> <span class="o">=</span>  <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;();</span>
+        <span class="k">for</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="nl">temp:</span><span class="n">res</span><span class="o">.</span><span class="na">values</span><span class="o">()){</span>
+            <span class="k">for</span><span class="o">(</span><span class="nc">Integer</span> <span class="nl">val:</span><span class="n">temp</span><span class="o">){</span>
+                <span class="n">soln</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">val</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">soln</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/29/restricted-pacman">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Restricted Pacman</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

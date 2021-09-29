@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Vertical Traversal of Binary Tree",
+      "category" : "",
+      "tags"     : "gfg, potd, java, medium, note",
+      "url"      : "/Schatz/2021/09/30/vertical-traversal-of-binary-tree",
+      "date"     : "2021-09-30 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Restricted Pacman",
       "category" : "",
       "tags"     : "gfg, potd, java, medium, appris, edge_case",
