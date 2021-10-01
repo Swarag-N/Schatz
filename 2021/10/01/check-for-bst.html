@@ -15,11 +15,11 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="">
+      <meta name="description" content="Given the root of a binary tree. Check whether it is a BST or not.">
   <title>
-        Page 4 of 5 -
+          Check for BST
+        -
       Schatz
-        - Journey to One Piece
     </title>
     <link rel="alternate" type="application/atom+xml" title="Schatz" href="https://swarag-n.github.io/Schatz/atom.xml">
     <link rel="alternate" type="application/json" title="Schatz" href="https://swarag-n.github.io/Schatz/feed.json" />
@@ -38,72 +38,125 @@
  </script>
 <body>
   <main>
-    <section id="intro">
-    <div class="flex-row-between">
-      <h1>
-          Hi 👋
+    <section class="post">
+  <div class="flex-row-between">
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+  <time datetime="2021-10-01T00:00:00-05:00">Oct 1, 2021 - 1' reading</time>
+      <h1 class="title">
+          Check for BST
       </h1>
-        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
-            <div></div>
-        </button>
-    </div>
-    <div class="bio">
-	    Journey to One Piece
-        <p>
-	    <a href="https://swarag-n.github.io/Schatz/about/">> About </a>
-        </p>
-        <p>
-            <a href="https://swarag-n.github.io/Schatz/archive/">> Archive</a>
-        </p>
-    </div>
-</section>
-<div class="search-article">
-    <label for="search-input" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-search">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-    </label>
-    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
-    <ul id="search-results"></ul>
-</div>
-<section class="posts" id="Blog">
-      <h2>
-          BLOG
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/easy">easy</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/appris">appris</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/edge_case">edge_case</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/note">note</a></span>
+      <h2 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
       </h2>
-    <ul>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a>
-            <time datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/19/expression-add-operators">Expression Add Operators</a>
-            <time datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/arrays-intersection">Intersection of Two Arrays II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-        <li>
-		<a href="https://swarag-n.github.io/Schatz/2021/09/18/sum-of-query-ii">Sum of Query II</a>
-            <time datetime="2021-09-18T00:00:00-05:00">Sep 18, 2021</time>
-        </li>
-    </ul>
-        <div class="pagination">
-            <a href="/Schatz/page3">&laquo; Prev</a>
-            <a href="/Schatz/">1</a>
-            <a href="/Schatz/page2">2</a>
-            <a href="/Schatz/page3">3</a>
-            <em>4</em>
-            <a href="/Schatz/page5">5</a>
-            <a href="/Schatz/page5">Next &raquo;</a>
-        </div>
+<p>Given the root of a binary tree. Check whether it is a BST or not.
+Note: We are considering that BSTs can not contain duplicate Nodes.
+A BST is defined as follows:</p>
+<ul>
+  <li>The left subtree of a node contains only nodes with keys less than the node’s key.</li>
+  <li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+  <li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
+      <h3 id="appris">
+          Appris <a href="#appris">#</a>
+      </h3>
+<ul>
+  <li>Inorder Traversal of Binary Search Tree results sorted array.</li>
+</ul>
+      <h3 id="edge-case">
+          Edge Case <a href="#edge-case">#</a>
+      </h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3 2 5 1 4
+</code></pre></div></div>
+<p>Understanding Edge Case</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        4
+      /   \
+    2       5
+      \
+        6
+</code></pre></div></div>
+      <h3 id="note">
+          Note <a href="#note">#</a>
+      </h3>
+<ul>
+  <li>This is the official solution provided by GeeksForGeeks Editorial</li>
+</ul>
+      <h2 id="solution">
+          Solution <a href="#solution">#</a>
+      </h2>
+<ol>
+  <li>Efficient Solution</li>
+</ol>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Solution</span>
+<span class="o">{</span>
+    <span class="nc">Node</span> <span class="n">prev</span><span class="o">;</span>
+    <span class="c1">//Function to check whether a Binary Tree is BST or not.</span>
+    <span class="kt">boolean</span> <span class="nf">isBST</span><span class="o">(</span><span class="nc">Node</span> <span class="n">root</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="c1">// code here.</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(!</span><span class="n">isBST</span><span class="o">(</span><span class="n">root</span><span class="o">.</span><span class="na">left</span><span class="o">))</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            
+            <span class="c1">// allows only distinct values node</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">prev</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">.</span><span class="na">data</span> <span class="o">&lt;=</span> <span class="n">prev</span><span class="o">.</span><span class="na">data</span> <span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">root</span><span class="o">;</span>
+            <span class="k">return</span> <span class="nf">isBST</span><span class="o">(</span><span class="n">root</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ol>
+  <li>🔴🔴🔴 Edge Case Failing Code
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Solution</span><span class="o">{</span> 
+ <span class="nc">Node</span> <span class="n">prev</span><span class="o">;</span>
+ <span class="c1">//Function to check whether a Binary Tree is BST or not.</span>
+ <span class="kt">boolean</span> <span class="nf">isBST</span><span class="o">(</span><span class="nc">Node</span> <span class="n">root</span><span class="o">){</span>
+     <span class="c1">// code here.</span>
+     <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+         <span class="cm">/* False if left is &gt; than node */</span>
+         <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">left</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">node</span><span class="o">.</span><span class="na">left</span><span class="o">.</span><span class="na">data</span> <span class="o">&gt;</span> <span class="n">node</span><span class="o">.</span><span class="na">data</span><span class="o">)</span>
+             <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            
+         <span class="cm">/* False if right is &lt; than node */</span>
+         <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">right</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">node</span><span class="o">.</span><span class="na">right</span><span class="o">.</span><span class="na">data</span> <span class="o">&lt;</span> <span class="n">node</span><span class="o">.</span><span class="na">data</span><span class="o">)</span> 
+             <span class="k">return</span> <span class="kc">false</span><span class="o">;</span> 
+            
+         <span class="c1">// allows only distinct values node</span>
+         <span class="k">if</span> <span class="o">(</span><span class="n">prev</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="n">root</span><span class="o">.</span><span class="na">data</span> <span class="o">&lt;=</span> <span class="n">prev</span><span class="o">.</span><span class="na">data</span> <span class="o">)</span>
+             <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            
+         <span class="n">prev</span> <span class="o">=</span> <span class="n">root</span><span class="o">;</span>
+         <span class="k">return</span> <span class="nf">isBST</span><span class="o">(</span><span class="n">root</span><span class="o">.</span><span class="na">right</span><span class="o">);</span>
+     <span class="o">}</span>
+     <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/09/30/vertical-traversal-of-binary-tree">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Vertical Traversal of Binary Tree</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>

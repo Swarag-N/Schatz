@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Check for BST",
+      "category" : "",
+      "tags"     : "gfg, potd, java, easy, appris, edge_case, note",
+      "url"      : "/Schatz/2021/10/01/check-for-bst",
+      "date"     : "2021-10-01 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Vertical Traversal of Binary Tree",
       "category" : "",
       "tags"     : "gfg, potd, java, medium, note",
