@@ -1,11 +1,9 @@
-# Gesko
+# Schatz
 
 Simple and minimal Jekyll blog. 
-Forked from [Asko](https://github.com/manuelmazzuola/asko).
-Inspired from [Klisé](https://github.com/piharpi/jekyll-klise)
+Forked from [Gesko](https://github.com/P0WEX/Gesko).
 
-Both had some issues with Github Pages, so I decided to make it work by losing as few features as possible.
-Now easly deployable on Github Pages, with:
+This is a code repository of Solutions to most of the topics in DSA from basic to advanced from reputed websites.
 
 ### Features
 
@@ -14,7 +12,7 @@ Now easly deployable on Github Pages, with:
 - [x] Inline CSS
 - [x] Anchor headings
 - [x] Tags & Tag pages 
-- [x] 404 page 
+- [x] 404 page (Customized)
 - [x] Robots.txt 🤖
 - [x] Atom & Json feeds 📡
 - [x] Sass 
@@ -22,25 +20,15 @@ Now easly deployable on Github Pages, with:
 - [x] PageSpeed and w3Validator tests PASSED ✔️
 - [x] Search bar 🔎
 - [x] Next & Previous Post ⏮️ ⏭️
-
-## Backlogs
-
-- [ ] Improve SEO score on [Lighthouse](lighthouse_test.png) 
-
-
-
-## Screenshot
-
-![light-theme](https://github.com/P0WEX/Gesko/blob/master/light-theme.jpg)
-![dark-theme](https://github.com/P0WEX/Gesko/blob/master/dark-theme.jpg)
+- [x] Pagination Support
 
 ## Installation
 
 Run local server:
 
 ```bash
-$ git clone https://github.com/P0WEX/Gesko.git
-$ cd Gesko
+$ git clone https://github.com/Swarag-N/Schatz/
+$ cd Schatz
 $ bundle install
 $ bundle exec jekyll build
 $ bundle exec jekyll serve
