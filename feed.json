@@ -17,6 +17,78 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string",
+            "title": "Maximum difference of zeros and ones in binary string",
+            "summary": "iven a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.",
+            "content_text": "Problem StatementGiven a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.Note: In the case of all 1s, the answer will be -1.Appris  Application of Kadan AlgorithimEdge Case00000Solutionclass Solution {    int maxSubstring(String S) {        // code here        int val = 0;        int res = 0;        for(int i=0;i&lt;S.length();i++){            if(S.charAt(i)=='0'){                val++;            }else{                val--;            }            res = Math.max(val,res);            if(val&lt;0){                val=0;            }        }        if(val ==0 &amp;&amp; res ==0){            return -1;        }        return res;    }}",
+            "content_html": "<h2 id=\"problem-statement\">Problem Statement</h2><p>Given a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.</p><p>Note: In the case of all 1s, the answer will be -1.</p><h3 id=\"appris\">Appris</h3><ul>  <li>Application of Kadan Algorithim</li></ul><h3 id=\"edge-case\">Edge Case</h3><div class=\"language-plaintext highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code>00000</code></pre></div></div><h2 id=\"solution\">Solution</h2><div class=\"language-java highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"kd\">class</span> <span class=\"nc\">Solution</span> <span class=\"o\">{</span>    <span class=\"kt\">int</span> <span class=\"nf\">maxSubstring</span><span class=\"o\">(</span><span class=\"nc\">String</span> <span class=\"no\">S</span><span class=\"o\">)</span> <span class=\"o\">{</span>        <span class=\"c1\">// code here</span>        <span class=\"kt\">int</span> <span class=\"n\">val</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">;</span>        <span class=\"kt\">int</span> <span class=\"n\">res</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"o\">;</span>        <span class=\"k\">for</span><span class=\"o\">(</span><span class=\"kt\">int</span> <span class=\"n\">i</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"o\">;</span><span class=\"n\">i</span><span class=\"o\">&lt;</span><span class=\"no\">S</span><span class=\"o\">.</span><span class=\"na\">length</span><span class=\"o\">();</span><span class=\"n\">i</span><span class=\"o\">++){</span>            <span class=\"k\">if</span><span class=\"o\">(</span><span class=\"no\">S</span><span class=\"o\">.</span><span class=\"na\">charAt</span><span class=\"o\">(</span><span class=\"n\">i</span><span class=\"o\">)==</span><span class=\"sc\">'0'</span><span class=\"o\">){</span>                <span class=\"n\">val</span><span class=\"o\">++;</span>            <span class=\"o\">}</span><span class=\"k\">else</span><span class=\"o\">{</span>                <span class=\"n\">val</span><span class=\"o\">--;</span>            <span class=\"o\">}</span>            <span class=\"n\">res</span> <span class=\"o\">=</span> <span class=\"nc\">Math</span><span class=\"o\">.</span><span class=\"na\">max</span><span class=\"o\">(</span><span class=\"n\">val</span><span class=\"o\">,</span><span class=\"n\">res</span><span class=\"o\">);</span>            <span class=\"k\">if</span><span class=\"o\">(</span><span class=\"n\">val</span><span class=\"o\">&lt;</span><span class=\"mi\">0</span><span class=\"o\">){</span>                <span class=\"n\">val</span><span class=\"o\">=</span><span class=\"mi\">0</span><span class=\"o\">;</span>            <span class=\"o\">}</span>        <span class=\"o\">}</span>        <span class=\"k\">if</span><span class=\"o\">(</span><span class=\"n\">val</span> <span class=\"o\">==</span><span class=\"mi\">0</span> <span class=\"o\">&amp;&amp;</span> <span class=\"n\">res</span> <span class=\"o\">==</span><span class=\"mi\">0</span><span class=\"o\">){</span>            <span class=\"k\">return</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"o\">;</span>        <span class=\"o\">}</span>        <span class=\"k\">return</span> <span class=\"n\">res</span><span class=\"o\">;</span>    <span class=\"o\">}</span><span class=\"o\">}</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string",
+            
+            
+            
+            "tags": ["gfg","potd","java","medium","dp","appris","edge_case","note"],
+            
+            "date_published": "2021-10-04T00:00:00-05:00",
+            "date_modified": "2021-10-04T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://swarag-n.github.io/Schatz/2021/10/03/check-for-bst",
+            "title": "Check For Bst",
+            "summary": null,
+            "content_text": "Problem StatementGiven an undirected graph with V vertices and E edges, check whether it contains any cycle or not.Solutionclass Solution:        #Function to detect cycle in an undirected graph.    #def isCycle(self, V, adj):\t\tdef isCycle(self, V, adj):\t    #Code here\t\tvis = [0]*V\t\t\t\tdef dfs(cur, parent):\t\t    vis[cur] = 1\t\t    \t\t    for i in adj[cur]:\t\t        if not vis[i]:\t\t            if dfs(i, cur): return True\t\t        elif i != parent:\t\t            return True\t\t            \t\t    return False\t\t\t\tfor i in range(V):\t\t    if not vis[i]:\t\t        if dfs(i, -1): return True\t\t        \t\treturn False",
+            "content_html": "<h2 id=\"problem-statement\">Problem Statement</h2><p>Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not.</p><h2 id=\"solution\">Solution</h2><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">class</span> <span class=\"nc\">Solution</span><span class=\"p\">:</span>        <span class=\"c1\">#Function to detect cycle in an undirected graph.</span>    <span class=\"c1\">#def isCycle(self, V, adj):</span>\t\t<span class=\"k\">def</span> <span class=\"nf\">isCycle</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">V</span><span class=\"p\">,</span> <span class=\"n\">adj</span><span class=\"p\">):</span>\t    <span class=\"c1\">#Code here</span>\t\t<span class=\"n\">vis</span> <span class=\"o\">=</span> <span class=\"p\">[</span><span class=\"mi\">0</span><span class=\"p\">]</span><span class=\"o\">*</span><span class=\"n\">V</span>\t\t\t\t<span class=\"k\">def</span> <span class=\"nf\">dfs</span><span class=\"p\">(</span><span class=\"n\">cur</span><span class=\"p\">,</span> <span class=\"n\">parent</span><span class=\"p\">):</span>\t\t    <span class=\"n\">vis</span><span class=\"p\">[</span><span class=\"n\">cur</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"mi\">1</span>\t\t    \t\t    <span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"n\">adj</span><span class=\"p\">[</span><span class=\"n\">cur</span><span class=\"p\">]:</span>\t\t        <span class=\"k\">if</span> <span class=\"ow\">not</span> <span class=\"n\">vis</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">]:</span>\t\t            <span class=\"k\">if</span> <span class=\"n\">dfs</span><span class=\"p\">(</span><span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"n\">cur</span><span class=\"p\">):</span> <span class=\"k\">return</span> <span class=\"bp\">True</span>\t\t        <span class=\"k\">elif</span> <span class=\"n\">i</span> <span class=\"o\">!=</span> <span class=\"n\">parent</span><span class=\"p\">:</span>\t\t            <span class=\"k\">return</span> <span class=\"bp\">True</span>\t\t            \t\t    <span class=\"k\">return</span> <span class=\"bp\">False</span>\t\t\t\t<span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"n\">V</span><span class=\"p\">):</span>\t\t    <span class=\"k\">if</span> <span class=\"ow\">not</span> <span class=\"n\">vis</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">]:</span>\t\t        <span class=\"k\">if</span> <span class=\"n\">dfs</span><span class=\"p\">(</span><span class=\"n\">i</span><span class=\"p\">,</span> <span class=\"o\">-</span><span class=\"mi\">1</span><span class=\"p\">):</span> <span class=\"k\">return</span> <span class=\"bp\">True</span>\t\t        \t\t<span class=\"k\">return</span> <span class=\"bp\">False</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/10/03/check-for-bst",
+            
+            
+            
+            "tags": ["gfg","potd","python","medium"],
+            
+            "date_published": "2021-10-03T00:00:00-05:00",
+            "date_modified": "2021-10-03T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
+            "id": "https://swarag-n.github.io/Schatz/2021/10/02/smallest-range-in-k-lists",
+            "title": "Smallest range in K lists",
+            "summary": "Given K sorted lists of integers, KSortedArray[] of size N each. The task is to find the smallest range that includes at least one element from each of the K lists. If more than one such range's are found, return the first such range found.",
+            "content_text": "Problem StatementGiven K sorted lists of integers, KSortedArray[] of size N each. The task is to find the smallest range that includes at least one element from each of the K lists. If more than one such range’s are found, return the first such range found.Note  This a officail solution given by leetcode editorial    Solution    ```java  class Solution{    class Element implements Comparable {        int val;        int ind;        int row;        Element (int val, int ind, int row) {            this.val= val;            this.ind= ind;            this.row= row;        }        public int compareTo(Element e){            return this.val- e.val;        }    }\tint[] findSmallestRange(int[][] KSortedArray,int n,int k)\t{\t    int length=Integer.MAX_VALUE, low= Integer.MAX_VALUE, high= Integer.MIN_VALUE, max= Integer.MIN_VALUE;\t    PriorityQueue pq= new PriorityQueue&lt;&gt;();\t    for(int i=0; i&lt;k; i++){\t        max= Math.max(max, KSortedArray[i][0]);\t        pq.add(new Element(KSortedArray[i][0], 0, i));\t    }\t    length= max- pq.peek().val;\t    low= pq.peek().val;\t    high= max;\t   // System.out.println(length + \" \" + low + \" \" + high);\t    boolean flag= true;\t    while(flag){\t       // System.out.println(length + \" \" + low + \" \" + high);\t        Element x= pq.poll();\t        int row= x.row;\t        int ind= x.ind;\t        if(!(ind+1&lt;n)){\t            flag= false;\t            break;\t        } else {\t            Element ne= new Element(KSortedArray[row][ind+1], ind+1, row);\t            pq.add(ne);\t            max= Math.max(max, KSortedArray[row][ind+1]);\t            if(length&gt; max- pq.peek().val){\t                length= max- pq.peek().val;\t                low= pq.peek().val;\t                high= max;\t            }\t        }\t    }\t    int arr[]= {low, high};\t    return arr;\t}}```",
+            "content_html": "<h2 id=\"problem-statement\">Problem Statement</h2><p>Given K sorted lists of integers, KSortedArray[] of size N each. The task is to find the smallest range that includes at least one element from each of the K lists. If more than one such range’s are found, return the first such range found.</p><h3 id=\"note\">Note</h3><ul>  <li>This a officail solution given by leetcode editorial    <h2 id=\"solution\">Solution</h2>    <p>```java</p>  </li></ul><p>class Solution{    class Element implements Comparable<Element> {        int val;        int ind;        int row;        Element (int val, int ind, int row) {            this.val= val;            this.ind= ind;            this.row= row;        }        public int compareTo(Element e){            return this.val- e.val;        }    }\tint[] findSmallestRange(int[][] KSortedArray,int n,int k)\t{\t    int length=Integer.MAX_VALUE, low= Integer.MAX_VALUE, high= Integer.MIN_VALUE, max= Integer.MIN_VALUE;\t    PriorityQueue<Element> pq= new PriorityQueue&lt;&gt;();\t    for(int i=0; i&lt;k; i++){\t        max= Math.max(max, KSortedArray[i][0]);\t        pq.add(new Element(KSortedArray[i][0], 0, i));\t    }\t    length= max- pq.peek().val;\t    low= pq.peek().val;\t    high= max;\t   // System.out.println(length + \" \" + low + \" \" + high);\t    boolean flag= true;\t    while(flag){\t       // System.out.println(length + \" \" + low + \" \" + high);\t        Element x= pq.poll();\t        int row= x.row;\t        int ind= x.ind;\t        if(!(ind+1&lt;n)){\t            flag= false;\t            break;\t        } else {\t            Element ne= new Element(KSortedArray[row][ind+1], ind+1, row);\t            pq.add(ne);\t            max= Math.max(max, KSortedArray[row][ind+1]);\t            if(length&gt; max- pq.peek().val){\t                length= max- pq.peek().val;\t                low= pq.peek().val;\t                high= max;\t            }\t        }\t    }\t    int arr[]= {low, high};\t    return arr;\t}}```</Element></Element></p>",
+            "url": "https://swarag-n.github.io/Schatz/2021/10/02/smallest-range-in-k-lists",
+            
+            
+            
+            "tags": ["gfg","potd","java","medium","hard"],
+            
+            "date_published": "2021-10-02T00:00:00-05:00",
+            "date_modified": "2021-10-02T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/10/01/check-for-bst",
             "title": "Check for BST",
             "summary": "Given the root of a binary tree. Check whether it is a BST or not.",

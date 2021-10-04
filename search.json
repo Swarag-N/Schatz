@@ -1,6 +1,30 @@
 [
   
     {
+      "title"    : "Maximum difference of zeros and ones in binary string",
+      "category" : "",
+      "tags"     : "gfg, potd, java, medium, dp, appris, edge_case, note",
+      "url"      : "/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string",
+      "date"     : "2021-10-04 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Check For Bst",
+      "category" : "",
+      "tags"     : "gfg, potd, python, medium",
+      "url"      : "/Schatz/2021/10/03/check-for-bst",
+      "date"     : "2021-10-03 00:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Smallest range in K lists",
+      "category" : "",
+      "tags"     : "gfg, potd, java, medium, hard",
+      "url"      : "/Schatz/2021/10/02/smallest-range-in-k-lists",
+      "date"     : "2021-10-02 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Check for BST",
       "category" : "",
       "tags"     : "gfg, potd, java, easy, appris, edge_case, note",

@@ -15,9 +15,9 @@
       <meta name="msapplication-config" content="/Schatz/assets/images/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <meta name="msapplication-TileColor" content="#2b5797">
-      <meta name="description" content="learnet something new - Appris">
+      <meta name="description" content="iven a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.">
   <title>
-          appris
+          Maximum difference of zeros and ones in binary string
         -
       Schatz
     </title>
@@ -38,92 +38,76 @@
  </script>
 <body>
   <main>
-    <section class="posts">
+    <section class="post">
   <div class="flex-row-between">
-      <h1>
-          Tag #appris
-      </h1>
-    <a href="https://swarag-n.github.io/Schatz"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	  <a href="https://swarag-n.github.io/Schatz/">« back</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
   </div>
-  <ul>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string">Maximum difference of zeros and ones in binary string</a><time
-        datetime="2021-10-04T00:00:00-05:00">Oct 4, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/10/01/check-for-bst">Check for BST</a><time
-        datetime="2021-10-01T00:00:00-05:00">Oct 1, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/29/restricted-pacman">Restricted Pacman</a><time
-        datetime="2021-09-29T00:00:00-05:00">Sep 29, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum">Largest subarray with 0 sum</a><time
-        datetime="2021-09-25T00:00:00-05:00">Sep 25, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match">Repeated String Match</a><time
-        datetime="2021-09-22T00:00:00-05:00">Sep 22, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers">Factorials of large numbers</a><time
-        datetime="2021-09-20T00:00:00-05:00">Sep 20, 2021</time></li>
-    <li><a class="post" href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes">Median of 2 Sorted Arrays of Different Sizes</a><time
-        datetime="2021-09-19T00:00:00-05:00">Sep 19, 2021</time></li>
-  </ul>
-</section>
-<section class="tags">
-      <h2>
-          All tags:
+  <time datetime="2021-10-04T00:00:00-05:00">Oct 4, 2021 - 1' reading</time>
+      <h1 class="title">
+          Maximum difference of zeros and ones in binary string
+      </h1>
+  <span class="meta">
+    <a href="https://swarag-n.github.io/Schatz/tag/gfg">gfg</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/potd">potd</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/java">java</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/medium">medium</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/dp">dp</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/appris">appris</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/edge_case">edge_case</a>, 
+    <a href="https://swarag-n.github.io/Schatz/tag/note">note</a></span>
+      <h2 id="problem-statement">
+          Problem Statement <a href="#problem-statement">#</a>
       </h2>
-  <ul class="tags-list">
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/start13c/">START13C (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/appris/">appris (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/codechef/">codechef (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/dp/">dp (1), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/easy/">easy (9), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/edge-case/">edge_case (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/gfg/">gfg (21), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/hard/">hard (4), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/java/">java (19), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/leetcode/">leetcode (3), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/medium/">medium (11), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/note/">note (7), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/potd/">potd (21), 
-      </a>
-    </li>
-    <li>
-	    <a class="posts" href="https://swarag-n.github.io/Schatz/tag/python/">python (9)
-      </a>
-    </li>
-  </ul>
+<p>Given a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.</p>
+<p>Note: In the case of all 1s, the answer will be -1.</p>
+      <h3 id="appris">
+          Appris <a href="#appris">#</a>
+      </h3>
+<ul>
+  <li>Application of Kadan Algorithim</li>
+</ul>
+      <h3 id="edge-case">
+          Edge Case <a href="#edge-case">#</a>
+      </h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00000
+</code></pre></div></div>
+      <h2 id="solution">
+          Solution <a href="#solution">#</a>
+      </h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="nf">maxSubstring</span><span class="o">(</span><span class="nc">String</span> <span class="no">S</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// code here</span>
+        <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="no">S</span><span class="o">.</span><span class="na">length</span><span class="o">();</span><span class="n">i</span><span class="o">++){</span>
+            <span class="k">if</span><span class="o">(</span><span class="no">S</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">)==</span><span class="sc">'0'</span><span class="o">){</span>
+                <span class="n">val</span><span class="o">++;</span>
+            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+                <span class="n">val</span><span class="o">--;</span>
+            <span class="o">}</span>
+            <span class="n">res</span> <span class="o">=</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">val</span><span class="o">,</span><span class="n">res</span><span class="o">);</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">val</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">){</span>
+                <span class="n">val</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">val</span> <span class="o">==</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">res</span> <span class="o">==</span><span class="mi">0</span><span class="o">){</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">res</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+</section>
+<section>
+  <nav class="post-nav">
+    <a class="post-nav-item post-nav-prev" href="/Schatz/2021/10/03/check-for-bst">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">Check For Bst</span>
+    </a>
+  </nav>
 </section>
   </main>
   <script>
