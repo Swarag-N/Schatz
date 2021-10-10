@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Valid Pair Sum",
+      "category" : "",
+      "tags"     : "gfg, potd, python",
+      "url"      : "/Schatz/2021/10/10/valid-pair-sum",
+      "date"     : "2021-10-10 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Maximum difference of zeros and ones in binary string",
       "category" : "",
       "tags"     : "gfg, potd, java, medium, dp, appris, edge_case, note",

@@ -17,6 +17,30 @@
 "items": [
     
         {
+            "id": "https://swarag-n.github.io/Schatz/2021/10/10/valid-pair-sum",
+            "title": "Valid Pair Sum",
+            "summary": "Given an array of size N, find the number of distinct pairs {i, j} (i != j) in the array such that the sum of a[i] and a[j] is greater than 0.",
+            "content_text": "Problem StatementGiven an array of size N, find the number of distinct pairs {i, j} (i != j) in the array such that the sum of a[i] and a[j] is greater than 0.SolutionCode:class Solution:    def ValidPair(self, a, n):         # Sorting the given array         a = sorted(a)           # Variable to store the count of pairs         ans = 0          # Loop to iterate through the array         for i in range(n):               # Ignore if the value is negative             if (a[i] &lt;= 0):                 continue              # Finding the index using lower_bound             j = lower_bound(a,-a[i] + 1)               # Finding the number of pairs between             # two indices i and j             ans += i - j         return ans",
+            "content_html": "<h2 id=\"problem-statement\">Problem Statement</h2><p>Given an array of size N, find the number of distinct pairs {i, j} (i != j) in the array such that the sum of a[i] and a[j] is greater than 0.</p><h2 id=\"solution\">Solution</h2><p>Code:</p><div class=\"language-python highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"k\">class</span> <span class=\"nc\">Solution</span><span class=\"p\">:</span>    <span class=\"k\">def</span> <span class=\"nf\">ValidPair</span><span class=\"p\">(</span><span class=\"bp\">self</span><span class=\"p\">,</span> <span class=\"n\">a</span><span class=\"p\">,</span> <span class=\"n\">n</span><span class=\"p\">):</span>         <span class=\"c1\"># Sorting the given array </span>        <span class=\"n\">a</span> <span class=\"o\">=</span> <span class=\"nb\">sorted</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">)</span>           <span class=\"c1\"># Variable to store the count of pairs </span>        <span class=\"n\">ans</span> <span class=\"o\">=</span> <span class=\"mi\">0</span>          <span class=\"c1\"># Loop to iterate through the array </span>        <span class=\"k\">for</span> <span class=\"n\">i</span> <span class=\"ow\">in</span> <span class=\"nb\">range</span><span class=\"p\">(</span><span class=\"n\">n</span><span class=\"p\">):</span>               <span class=\"c1\"># Ignore if the value is negative </span>            <span class=\"k\">if</span> <span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">]</span> <span class=\"o\">&lt;=</span> <span class=\"mi\">0</span><span class=\"p\">):</span>                 <span class=\"k\">continue</span>              <span class=\"c1\"># Finding the index using lower_bound </span>            <span class=\"n\">j</span> <span class=\"o\">=</span> <span class=\"n\">lower_bound</span><span class=\"p\">(</span><span class=\"n\">a</span><span class=\"p\">,</span><span class=\"o\">-</span><span class=\"n\">a</span><span class=\"p\">[</span><span class=\"n\">i</span><span class=\"p\">]</span> <span class=\"o\">+</span> <span class=\"mi\">1</span><span class=\"p\">)</span>               <span class=\"c1\"># Finding the number of pairs between </span>            <span class=\"c1\"># two indices i and j </span>            <span class=\"n\">ans</span> <span class=\"o\">+=</span> <span class=\"n\">i</span> <span class=\"o\">-</span> <span class=\"n\">j</span>         <span class=\"k\">return</span> <span class=\"n\">ans</span></code></pre></div></div>",
+            "url": "https://swarag-n.github.io/Schatz/2021/10/10/valid-pair-sum",
+            
+            
+            
+            "tags": ["gfg","potd","python"],
+            
+            "date_published": "2021-10-10T00:00:00-05:00",
+            "date_modified": "2021-10-10T00:00:00-05:00",
+            
+                "author":  {
+                "name": "Swarag Narayanasetty",
+                "url": null,
+                "avatar": null
+                }
+                
+            
+        },
+    
+        {
             "id": "https://swarag-n.github.io/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string",
             "title": "Maximum difference of zeros and ones in binary string",
             "summary": "iven a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.",
