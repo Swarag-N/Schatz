@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Swap all odd and even bits",
+      "category" : "",
+      "tags"     : "gfg, potd, java, easy, appris, edge_case, note",
+      "url"      : "/Schatz/2021/10/14/swap-all-odd-and-even-bits",
+      "date"     : "2021-10-14 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Valid Pair Sum",
       "category" : "",
       "tags"     : "gfg, potd, python",
