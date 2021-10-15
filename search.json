@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "All Unique Permutations of an array",
+      "category" : "",
+      "tags"     : "gfg, potd, python, medium",
+      "url"      : "/Schatz/2021/10/15/all-unique-permutations-of-an-array",
+      "date"     : "2021-10-15 00:00:00 -0500"
+    } ,
+  
+    {
       "title"    : "Swap all odd and even bits",
       "category" : "",
       "tags"     : "gfg, potd, java, easy, appris, edge_case, note",
