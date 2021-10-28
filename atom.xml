@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Schatz</title>
- <link href="https://swarag-n.github.io/Schatz/atom.xml" rel="self"/>
- <link href="https://swarag-n.github.io/Schatz/"/>
- <updated>2021-10-16T13:13:24-05:00</updated>
- <id>https://swarag-n.github.io</id>
+ <link href="https://swarag.tech/Schatz/atom.xml" rel="self"/>
+ <link href="https://swarag.tech/Schatz/"/>
+ <updated>2021-10-28T05:52:23-05:00</updated>
+ <id>https://swarag.tech</id>
  <author>
    <name>Swarag Narayanasetty</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Count distinct elements in every window</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/16/count-distinct-elements-in-every-window"/>
+   <link href="https://swarag.tech/Schatz/2021/10/16/count-distinct-elements-in-every-window"/>
    <updated>2021-10-16T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/16/Count-distinct-elements-in-every-window</id>
+   <id>https://swarag.tech/2021/10/16/Count-distinct-elements-in-every-window</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given an array of integers and a number K. Find the count of distinct elements in every window of size K in the array.&lt;/p&gt;
 
@@ -60,9 +60,9 @@
  
  <entry>
    <title>All Unique Permutations of an array</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/15/all-unique-permutations-of-an-array"/>
+   <link href="https://swarag.tech/Schatz/2021/10/15/all-unique-permutations-of-an-array"/>
    <updated>2021-10-15T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/15/All-Unique-permutations-of-an-array</id>
+   <id>https://swarag.tech/2021/10/15/All-Unique-permutations-of-an-array</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given an array arr[] of length n. Find all possible unique permutations of the array.&lt;/p&gt;
 
@@ -82,9 +82,9 @@
  
  <entry>
    <title>Swap all odd and even bits</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/14/swap-all-odd-and-even-bits"/>
+   <link href="https://swarag.tech/Schatz/2021/10/14/swap-all-odd-and-even-bits"/>
    <updated>2021-10-14T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/14/Swap-all-odd-and-even-bits</id>
+   <id>https://swarag.tech/2021/10/14/Swap-all-odd-and-even-bits</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given an unsigned integer N. The task is to swap all odd bits with even bits. For example, if the given number is 23 (00010111), it should be converted to 43(00101011). Here, every even position bit is swapped with adjacent bit on the right side(even position bits are highlighted in the binary representation of 23), and every odd position bit is swapped with an adjacent on the left side.&lt;/p&gt;
 
@@ -132,9 +132,9 @@
  
  <entry>
    <title>Valid Pair Sum</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/10/valid-pair-sum"/>
+   <link href="https://swarag.tech/Schatz/2021/10/10/valid-pair-sum"/>
    <updated>2021-10-10T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/10/Valid-Pair-Sum</id>
+   <id>https://swarag.tech/2021/10/10/Valid-Pair-Sum</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given an array of size N, find the number of distinct pairs {i, j} (i != j) in the array such that the sum of a[i] and a[j] is greater than 0.&lt;/p&gt;
 
@@ -170,9 +170,9 @@
  
  <entry>
    <title>Maximum difference of zeros and ones in binary string</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string"/>
+   <link href="https://swarag.tech/Schatz/2021/10/04/maximum-difference-of-zeros-and-ones-in-binary-string"/>
    <updated>2021-10-04T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/04/Maximum-difference-of-zeros-and-ones-in-binary-string</id>
+   <id>https://swarag.tech/2021/10/04/Maximum-difference-of-zeros-and-ones-in-binary-string</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given a binary string S consisting of 0s and 1s. The task is to find the maximum difference of the number of 0s and the number of 1s (number of 0s – number of 1s) in the substrings of a string.&lt;/p&gt;
 
@@ -216,9 +216,9 @@
  
  <entry>
    <title>Check For Bst</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/03/check-for-bst"/>
+   <link href="https://swarag.tech/Schatz/2021/10/03/check-for-bst"/>
    <updated>2021-10-03T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/03/Check-for-BST</id>
+   <id>https://swarag.tech/2021/10/03/Check-for-BST</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given an undirected graph with V vertices and E edges, check whether it contains any cycle or not.&lt;/p&gt;
 
@@ -254,9 +254,9 @@
  
  <entry>
    <title>Smallest range in K lists</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/02/smallest-range-in-k-lists"/>
+   <link href="https://swarag.tech/Schatz/2021/10/02/smallest-range-in-k-lists"/>
    <updated>2021-10-02T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/02/Smallest-range-in-K-lists</id>
+   <id>https://swarag.tech/2021/10/02/Smallest-range-in-K-lists</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given K sorted lists of integers, KSortedArray[] of size N each. The task is to find the smallest range that includes at least one element from each of the K lists. If more than one such range’s are found, return the first such range found.&lt;/p&gt;
 
@@ -325,9 +325,9 @@
  
  <entry>
    <title>Check for BST</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/10/01/check-for-bst"/>
+   <link href="https://swarag.tech/Schatz/2021/10/01/check-for-bst"/>
    <updated>2021-10-01T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/10/01/Check-for-BST</id>
+   <id>https://swarag.tech/2021/10/01/Check-for-BST</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given the root of a binary tree. Check whether it is a BST or not.
 Note: We are considering that BSTs can not contain duplicate Nodes.
@@ -419,9 +419,9 @@ A BST is defined as follows:&lt;/p&gt;
  
  <entry>
    <title>Vertical Traversal of Binary Tree</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/30/vertical-traversal-of-binary-tree"/>
+   <link href="https://swarag.tech/Schatz/2021/09/30/vertical-traversal-of-binary-tree"/>
    <updated>2021-09-30T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/30/Vertical-Traversal-of-Binary-Tree</id>
+   <id>https://swarag.tech/2021/09/30/Vertical-Traversal-of-Binary-Tree</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given a Binary Tree, find the vertical traversal of it starting from the leftmost level to the rightmost level.
 If there are multiple nodes passing through a vertical line, then they should be printed as they appear in level order traversal of the tree.&lt;/p&gt;
@@ -487,9 +487,9 @@ If there are multiple nodes passing through a vertical line, then they should be
  
  <entry>
    <title>Restricted Pacman</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/29/restricted-pacman"/>
+   <link href="https://swarag.tech/Schatz/2021/09/29/restricted-pacman"/>
    <updated>2021-09-29T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/29/Restricted-Pacman</id>
+   <id>https://swarag.tech/2021/09/29/Restricted-Pacman</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;In the game of Restricted Pacman, an infinite linear path is given. Pacman has to start at position 0 and eat as many candies as possible. In one move he can only jump a distance of either M or N.  If M and N are coprime numbers, find how many candies will be left on the board after the game is over.&lt;br /&gt;
 Note: The result is always finite as after a point X every index in the infinite path can be visited.&lt;/p&gt;
@@ -583,9 +583,9 @@ Note: The result is always finite as after a point X every index in the infinite
  
  <entry>
    <title>Sort a stack</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/28/sort-a-stack"/>
+   <link href="https://swarag.tech/Schatz/2021/09/28/sort-a-stack"/>
    <updated>2021-09-28T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/28/Sort-a-stack</id>
+   <id>https://swarag.tech/2021/09/28/Sort-a-stack</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given a stack, the task is to sort it such that the top of the stack has the greatest element.&lt;/p&gt;
 
@@ -617,9 +617,9 @@ Note: The result is always finite as after a point X every index in the infinite
  
  <entry>
    <title>The Preparations</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/27/the-preparations"/>
+   <link href="https://swarag.tech/Schatz/2021/09/27/the-preparations"/>
    <updated>2021-09-27T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/27/The-Preparations</id>
+   <id>https://swarag.tech/2021/09/27/The-Preparations</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Chef has an exam which will start exactly M minutes from now. However, instead of preparing for his exam, Chef started watching Season-1 of Superchef. Season-1 has N episodes, and the duration of each episode is K minutes.&lt;/p&gt;
 
@@ -641,9 +641,9 @@ Note: The result is always finite as after a point X every index in the infinite
  
  <entry>
    <title>Maximum Light Up</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/27/maximum-light-up"/>
+   <link href="https://swarag.tech/Schatz/2021/09/27/maximum-light-up"/>
    <updated>2021-09-27T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/27/Maximum-Light-Up</id>
+   <id>https://swarag.tech/2021/09/27/Maximum-Light-Up</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Chef has allocated himself a budget of P rupees to buy Diwali crackers. There are only 3 types of crackers available in the market and each type of cracker can be bought any number of times.&lt;/p&gt;
 
@@ -682,9 +682,9 @@ What’s the maximum total of Anars and Chakris that Chef can light up with his 
  
  <entry>
    <title>Magical Doors</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/27/magical-doors"/>
+   <link href="https://swarag.tech/Schatz/2021/09/27/magical-doors"/>
    <updated>2021-09-27T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/27/Magical-Doors</id>
+   <id>https://swarag.tech/2021/09/27/Magical-Doors</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Chef wants to cross a hallway of N doors. These N doors are represented as a string. Each door is initially either open or close, represented by 1 or 0 respectively. Chef is required to go through all the doors one by one in the order that they appear, starting from the leftmost door and moving only rightwards at each step.&lt;/p&gt;
 
@@ -723,9 +723,9 @@ What’s the maximum total of Anars and Chakris that Chef can light up with his 
  
  <entry>
    <title>Finding middle element in a linked list</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/27/finding-middle-element-in-a-linked-list"/>
+   <link href="https://swarag.tech/Schatz/2021/09/27/finding-middle-element-in-a-linked-list"/>
    <updated>2021-09-27T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/27/Finding-middle-element-in-a-linked-list</id>
+   <id>https://swarag.tech/2021/09/27/Finding-middle-element-in-a-linked-list</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given a singly linked list of N nodes.
 The task is to find the middle of the linked list. For example, if the linked list is
@@ -772,9 +772,9 @@ For example, if the linked list given is 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt
  
  <entry>
    <title>Chef in Vaccination Queue</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/27/chef-in-vaccination-queue"/>
+   <link href="https://swarag.tech/Schatz/2021/09/27/chef-in-vaccination-queue"/>
    <updated>2021-09-27T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/27/Chef-in-Vaccination-Queue</id>
+   <id>https://swarag.tech/2021/09/27/Chef-in-Vaccination-Queue</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;There are N people in the vaccination queue, Chef is standing on the Pth position from the front of the queue. It takes X minutes to vaccinate a child and Y minutes to vaccinate an elderly person. Assume Chef is an elderly person.&lt;/p&gt;
 
@@ -799,9 +799,9 @@ For example, if the linked list given is 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt
  
  <entry>
    <title>Count Occurences of Anagrams</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/26/count-occurences-of-anagrams"/>
+   <link href="https://swarag.tech/Schatz/2021/09/26/count-occurences-of-anagrams"/>
    <updated>2021-09-26T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/26/Count-Occurences-of-Anagrams</id>
+   <id>https://swarag.tech/2021/09/26/Count-Occurences-of-Anagrams</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given a word pat and a text txt. Return the count of the occurences of anagrams of the word in the text.&lt;/p&gt;
 
@@ -854,9 +854,9 @@ For example, if the linked list given is 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt
  
  <entry>
    <title>Largest subarray with 0 sum</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/25/largest-subarray-with-0-sum"/>
+   <link href="https://swarag.tech/Schatz/2021/09/25/largest-subarray-with-0-sum"/>
    <updated>2021-09-25T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/25/Largest-subarray-with-0-sum</id>
+   <id>https://swarag.tech/2021/09/25/Largest-subarray-with-0-sum</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given an array having both positive and negative integers. The task is to compute the length of the largest subarray with sum 0.&lt;/p&gt;
 
@@ -897,9 +897,9 @@ For example, if the linked list given is 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt
  
  <entry>
    <title>Check Tree Traversal</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/24/check-tree-traversal"/>
+   <link href="https://swarag.tech/Schatz/2021/09/24/check-tree-traversal"/>
    <updated>2021-09-24T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/24/Check-Tree-Traversal</id>
+   <id>https://swarag.tech/2021/09/24/Check-Tree-Traversal</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given Preorder, Inorder and Postorder traversals of some tree of size N. The task is to check if they are all of the same tree or not.&lt;/p&gt;
 
@@ -968,9 +968,9 @@ https://auth.geeksforgeeks.org/user/ritumodi5/profile&lt;/p&gt;
  
  <entry>
    <title>Count total set bits</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/23/count-total-set-bits"/>
+   <link href="https://swarag.tech/Schatz/2021/09/23/count-total-set-bits"/>
    <updated>2021-09-23T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/23/Count-total-set-bits</id>
+   <id>https://swarag.tech/2021/09/23/Count-total-set-bits</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;You are given a number N. Find the total count of set bits for all numbers from 1 to N(both inclusive).&lt;/p&gt;
 
@@ -1004,9 +1004,9 @@ https://auth.geeksforgeeks.org/user/ritumodi5/profile&lt;/p&gt;
  
  <entry>
    <title>Repeated String Match</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/22/repeated-string-match"/>
+   <link href="https://swarag.tech/Schatz/2021/09/22/repeated-string-match"/>
    <updated>2021-09-22T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/22/Repeated-String-Match</id>
+   <id>https://swarag.tech/2021/09/22/Repeated-String-Match</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given two strings A and B, find the minimum number of times A has to be repeated such that B becomes a substring of the repeated A. If B cannot be a substring of A no matter how many times it is repeated, return -1.&lt;/p&gt;
 
@@ -1035,9 +1035,9 @@ https://auth.geeksforgeeks.org/user/ritumodi5/profile&lt;/p&gt;
  
  <entry>
    <title>Dam of Candies</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/21/dam-of-candies"/>
+   <link href="https://swarag.tech/Schatz/2021/09/21/dam-of-candies"/>
    <updated>2021-09-21T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/21/Dam-of-Candies</id>
+   <id>https://swarag.tech/2021/09/21/Dam-of-Candies</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Geek wants to make a special space for candies on his bookshelf. Currently, it has N books, each of whose height is represented by the array height[] and has unit width.
 Help him select 2 books such that he can store maximum candies between them by removing all the other books from between the selected books. The task is to find out the area between two books that can hold the maximum candies without changing the original position of selected books&lt;/p&gt;
@@ -1064,9 +1064,9 @@ Help him select 2 books such that he can store maximum candies between them by r
  
  <entry>
    <title>Factorials of large numbers</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/20/factorials-of-large-numbers"/>
+   <link href="https://swarag.tech/Schatz/2021/09/20/factorials-of-large-numbers"/>
    <updated>2021-09-20T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/20/Factorials-of-large-numbers</id>
+   <id>https://swarag.tech/2021/09/20/Factorials-of-large-numbers</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given an integer N, find its factorial.&lt;/p&gt;
 
@@ -1149,9 +1149,9 @@ Help him select 2 books such that he can store maximum candies between them by r
  
  <entry>
    <title>Median of 2 Sorted Arrays of Different Sizes</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes"/>
+   <link href="https://swarag.tech/Schatz/2021/09/19/median-of-2-sorted-arrays-of-different-sizes"/>
    <updated>2021-09-19T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/19/Median-of-2-Sorted-Arrays-of-Different-Sizes</id>
+   <id>https://swarag.tech/2021/09/19/Median-of-2-Sorted-Arrays-of-Different-Sizes</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given two sorted arrays array1 and array2 of size m and n respectively. Find the median of the two sorted arrays.&lt;/p&gt;
 
@@ -1254,9 +1254,9 @@ Help him select 2 books such that he can store maximum candies between them by r
  
  <entry>
    <title>Expression Add Operators</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/19/expression-add-operators"/>
+   <link href="https://swarag.tech/Schatz/2021/09/19/expression-add-operators"/>
    <updated>2021-09-19T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/19/Expression-Add-Operators</id>
+   <id>https://swarag.tech/2021/09/19/Expression-Add-Operators</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given a string num that contains only digits and an integer target, return all possibilities to add the binary operators ‘+’, ‘-‘, or ‘*’ between the digits of num so that the resultant expression evaluates to the target value.&lt;/p&gt;
 
@@ -1365,9 +1365,9 @@ Output: [&quot;1*0+5&quot;,&quot;10-5&quot;]
  
  <entry>
    <title>Intersection of Two Arrays II</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/18/arrays-intersection"/>
+   <link href="https://swarag.tech/Schatz/2021/09/18/arrays-intersection"/>
    <updated>2021-09-18T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/18/arrays-intersection</id>
+   <id>https://swarag.tech/2021/09/18/arrays-intersection</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 
 &lt;p&gt;Given a linked list of N nodes such that it may contain a loop.
@@ -1428,9 +1428,9 @@ Remove the loop from the linked list, if it is present.&lt;/p&gt;
  
  <entry>
    <title>Sum of Query II</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/18/sum-of-query-ii"/>
+   <link href="https://swarag.tech/Schatz/2021/09/18/sum-of-query-ii"/>
    <updated>2021-09-18T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/18/Sum-of-Query-II</id>
+   <id>https://swarag.tech/2021/09/18/Sum-of-Query-II</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;You are given an array arr[] of n integers and q queries in an array queries[] of length 2*q containing l, r pair for all q queries. You need to compute the following sum over q queries.&lt;/p&gt;
 
@@ -1485,9 +1485,9 @@ Remove the loop from the linked list, if it is present.&lt;/p&gt;
  
  <entry>
    <title>Spiral order in matrix.</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/17/spiral-order-in-matrix"/>
+   <link href="https://swarag.tech/Schatz/2021/09/17/spiral-order-in-matrix"/>
    <updated>2021-09-17T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/17/Spiral-order-in-matrix</id>
+   <id>https://swarag.tech/2021/09/17/Spiral-order-in-matrix</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given an m x n matrix, return all elements of the matrix in spiral order.&lt;/p&gt;
 
@@ -1549,9 +1549,9 @@ Remove the loop from the linked list, if it is present.&lt;/p&gt;
  
  <entry>
    <title>K-th element of two sorted Arrays</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/17/kth-element-of-two-sorted-arrays"/>
+   <link href="https://swarag.tech/Schatz/2021/09/17/kth-element-of-two-sorted-arrays"/>
    <updated>2021-09-17T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/17/Kth-element-of-two-sorted-Arrays</id>
+   <id>https://swarag.tech/2021/09/17/Kth-element-of-two-sorted-Arrays</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given two sorted arrays arr1 and arr2 of size N and M respectively and an element K. The task is to find the element that would be at the k’th position of the final sorted array.&lt;/p&gt;
 
@@ -1604,9 +1604,9 @@ Remove the loop from the linked list, if it is present.&lt;/p&gt;
  
  <entry>
    <title>N meetings in one room</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/16/n-meetings-in-one-room"/>
+   <link href="https://swarag.tech/Schatz/2021/09/16/n-meetings-in-one-room"/>
    <updated>2021-09-16T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/16/N-meetings-in-one-room</id>
+   <id>https://swarag.tech/2021/09/16/N-meetings-in-one-room</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;There is one meeting room in a firm. There are N meetings in the form of (start[i], end[i]) where start[i] is start time of meeting i and end[i] is finish time of meeting i.
 What is the maximum number of meetings that can be accommodated in the meeting room when only one meeting can be held in the meeting room at a particular time?&lt;/p&gt;
@@ -1648,9 +1648,9 @@ What is the maximum number of meetings that can be accommodated in the meeting r
  
  <entry>
    <title>Sort an array of 0s, 1s and 2s</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/15/sort-an-array-of-0s-1s-and-2s"/>
+   <link href="https://swarag.tech/Schatz/2021/09/15/sort-an-array-of-0s-1s-and-2s"/>
    <updated>2021-09-15T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/15/Sort-an-array-of-0s-1s-and-2s</id>
+   <id>https://swarag.tech/2021/09/15/Sort-an-array-of-0s-1s-and-2s</id>
    <content type="html">&lt;h3 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h3&gt;
 &lt;p&gt;Given an array A[] consisting 0s, 1s and 2s. The task is to write a function that sorts the given array. The functions should put all 0s first, then all 1s and all 2s in last.&lt;/p&gt;
 
@@ -1698,9 +1698,9 @@ What is the maximum number of meetings that can be accommodated in the meeting r
  
  <entry>
    <title>Remove loop in Linked List</title>
-   <link href="https://swarag-n.github.io/Schatz/2021/09/14/remove-loop-in-linkedlist"/>
+   <link href="https://swarag.tech/Schatz/2021/09/14/remove-loop-in-linkedlist"/>
    <updated>2021-09-14T00:00:00-05:00</updated>
-   <id>https://swarag-n.github.io/2021/09/14/remove-loop-in-linkedlist</id>
+   <id>https://swarag.tech/2021/09/14/remove-loop-in-linkedlist</id>
    <content type="html">&lt;h2 id=&quot;problem-statement&quot;&gt;Problem Statement&lt;/h2&gt;
 &lt;p&gt;Given a linked list of N nodes such that it may contain a loop.
 A loop here means that the last node of the link list is connected to the node at position X. If the link list does not have any loop, X=0.
