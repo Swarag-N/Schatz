@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://swarag.tech/sitemap.xml
+Sitemap: https://swarag-n.github.io/sitemap.xml
