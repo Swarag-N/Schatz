@@ -4,7 +4,7 @@
  <title>Schatz</title>
  <link href="https://swarag-n.github.io/Schatz/atom.xml" rel="self"/>
  <link href="https://swarag-n.github.io/Schatz/"/>
- <updated>2022-11-19T09:06:12-06:00</updated>
+ <updated>2022-11-19T09:19:36-06:00</updated>
  <id>https://swarag-n.github.io</id>
  <author>
    <name>Swarag Narayanasetty</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Remove loop in Linked List</title>
+   <title>Find Pivot Index</title>
    <link href="https://swarag-n.github.io/Schatz/2022/11/16/find-pivot-index"/>
    <updated>2022-11-16T00:00:00-06:00</updated>
    <id>https://swarag-n.github.io/2022/11/16/find-pivot-index</id>
