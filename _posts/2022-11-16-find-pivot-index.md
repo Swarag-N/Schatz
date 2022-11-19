@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Remove loop in Linked List 
-description: This is a collection of short CSS snippets I thought might be useful for beginners
-summary: Remove the loop from the linked list, if it is present. 
+title: Find Pivot Index
+description: nothing here
+summary: Given an array of integers nums, calculate the pivot index of this array.
 tags:
     - leetcode
     - leetcode-75
